@@ -1,0 +1,17 @@
+{
+  "name": "projectsnpfront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwindprod": "tailwindcss -i ./css_snpinputv1.0.css -o ./css/snpstyleoutputv1.0.css",
+    "tailwindwatch": "tailwindcss -i ./css_snpinputv1.0.css -o ./css/snpstyleoutputv1.0.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

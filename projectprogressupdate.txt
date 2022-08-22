@@ -1,0 +1,13 @@
+Aug 22 2022
+    cli commands
+    npm init -y
+
+    npm i -D tailwindcss
+    npx tailwindcss init
+    npm run tailwindprod
+    update tailwindcss config.js
+
+    git init
+    git config --global user.name 'rayeesi'
+    git config --global user.email 'hubsoftindia@gmail.com'
+
