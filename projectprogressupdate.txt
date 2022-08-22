@@ -10,4 +10,10 @@ Aug 22 2022
     git init
     git config --global user.name 'rayeesi'
     git config --global user.email 'hubsoftindia@gmail.com'
+    touch .gitignore
+    git status
+    git add .
+    git commit -m 'firstcommitasstart'
+
+
 
