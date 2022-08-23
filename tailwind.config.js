@@ -6,14 +6,17 @@ module.exports = {
       'sm':'480px',
       'md': '768px',
       'lg': '976px',
-      'xl': '1440px',
-      '2xl': '1440px'
+      'xl': '1280px',
+      '2xl': '1536px'
 
     },
     extend: {
       'colors':{
-        'cust-pri-clr': '#003366',
-        'cust-sec-clr': '#336600',
+        'cust-logo-blue':'#184bb2',
+        'cust-logo-bluedark':'#0034b7',
+        'cust-logo-green':'#019934',
+        'cust-pri-clr': '#184bb2',
+        'cust-sec-clr': '#019934',
         'cust-dark-grey': '#333333',
         'cust-light-grey': '#999999',
         'cust-lightest-grey': '#e5e5e5'

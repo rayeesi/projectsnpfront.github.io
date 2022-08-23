@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwindprod": "tailwindcss -i ./css_snpinputv1.0.css -o ./css/snpstyleoutputv1.0.css",
+    "tailwindprod": "tailwindcss -i ./css_snpinputv1.0.css -o ./css/snpstyleoutputv1.0.css --minify",
+    "tailwinddev": "tailwindcss -i ./css_snpinputv1.0.css -o ./css/snpstyleoutputv1.0.css",    
     "tailwindwatch": "tailwindcss -i ./css_snpinputv1.0.css -o ./css/snpstyleoutputv1.0.css --watch"
   },
   "keywords": [],
