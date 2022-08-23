@@ -14,6 +14,8 @@ Aug 22 2022
     git status
     git add .
     git commit -m 'firstcommitasstart'
-
+    git remote
+    git remote add origin https://github.com/rayeesi/projectsnpfront.git
+    git push
 
 
