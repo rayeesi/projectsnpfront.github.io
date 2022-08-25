@@ -17,9 +17,11 @@ module.exports = {
         'cust-logo-green':'#019934',
         'cust-pri-clr': '#184bb2',
         'cust-sec-clr': '#019934',
-        'cust-dark-grey': '#333333',
-        'cust-light-grey': '#999999',
-        'cust-lightest-grey': '#e5e5e5'
+        'cust-dark-grey': '#555555',
+        'cust-light-grey': '#777777',
+        'cust-lighter-grey': '#999999',
+        'cust-lightest-grey': '#f0f3fa'
+        
       }
     },
   },
