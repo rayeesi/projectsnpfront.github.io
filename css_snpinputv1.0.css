@@ -5,6 +5,19 @@
 /* -- main logo-- */
 .main-logo{
     border:0;
-    width:220px;
+    width:200px;
     /* width: clamp(100px,15vw,270px); */
+}
+
+.header-container{
+    height:65px;
+}
+.primary-nav__links {
+    font-size:1rem;
+    position:relative;
+
+}
+
+.text-mute{
+    font-size:0.5rem;
 }
