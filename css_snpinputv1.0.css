@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+ 
+
 
 
 /* -- header -- */
@@ -12,26 +14,48 @@
     /* width: clamp(100px,15vw,270px); */
 }
 
-:root{
-
-}
 
 .header-container{
     height:65px;
 }
 
-.primary-nav-li{
-    cursor:pointer;
-    position:relative;
+@layer components {
+    .primary-nav-li{
+        
+        position:relative;
+        z-index: 1;
+    }
+
+
+    .primary-nav-li:hover .primary-nav__links{
+        border-radius: 50px;
+        background-color:  theme('colors.cust-logo-bluedark1');    
+    }
+
+
+    .primary-nav-li:hover .dropdown{
+        
+        display: inline-block;
+        z-index: -1;
+    }
 }
+
 
 .primary-nav__links {
     font-size:1rem;
     position:relative;
-
+    
 }
 
 .text-mute{
     font-size:0.5rem;
+  
 }
 
+@layer components {
+    .checkcustvar {
+        color: theme('colors.cust-logo-bluedark1'); ;   
+        font-size:2rem;
+        font-weight: 700;
+    }
+}

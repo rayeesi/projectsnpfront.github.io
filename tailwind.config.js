@@ -12,6 +12,7 @@ module.exports = {
     },
     extend: {
       'colors':{
+        'cust-logo-bluedark1':'#ff34b7',
         'cust-logo-blue':'#184bb2',
         'cust-logo-bluedark':'#0034b7',
         'cust-logo-green':'#019934',
