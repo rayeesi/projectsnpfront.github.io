@@ -551,6 +551,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -561,6 +565,22 @@ video {
 
 .top-1 {
   top: 0.25rem;
+}
+
+.top-\[-40\] {
+  top: -40;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-40 {
+  top: 10rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .mx-auto {
@@ -583,6 +603,10 @@ video {
   margin-bottom: 3rem;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -597,6 +621,26 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-max {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .flex-auto {
@@ -624,6 +668,11 @@ video {
   border-radius: 9999px;
 }
 
+.bg-green-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 253 244 / var(--tw-bg-opacity));
+}
+
 .bg-cust-sec-clr {
   --tw-bg-opacity: 1;
   background-color: rgb(1 153 52 / var(--tw-bg-opacity));
@@ -647,6 +696,16 @@ video {
 .bg-cust-light-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(119 119 130 / var(--tw-bg-opacity));
+}
+
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
+.bg-red-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 
 .fill-cust-light-grey {
@@ -688,6 +747,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .text-xs {
@@ -749,7 +813,7 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-/* -- main logo-- */
+/* -- header -- */
 
 .main-logo{
   border:0;
@@ -757,8 +821,16 @@ video {
   /* width: clamp(100px,15vw,270px); */
 }
 
+:root{
+}
+
 .header-container{
   height:65px;
+}
+
+.primary-nav-li{
+  cursor:pointer;
+  position:relative;
 }
 
 .primary-nav__links {
@@ -852,11 +924,21 @@ video {
   .sm\:block {
     display: block;
   }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:block {
     display: block;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -881,3 +963,4 @@ video {
     width: 91.666667%;
   }
 }
+

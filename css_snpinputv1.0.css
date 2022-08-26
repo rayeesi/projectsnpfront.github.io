@@ -2,16 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* -- main logo-- */
+
+
+
+/* -- header -- */
 .main-logo{
     border:0;
     width:200px;
     /* width: clamp(100px,15vw,270px); */
 }
 
+:root{
+
+}
+
 .header-container{
     height:65px;
 }
+
+.primary-nav-li{
+    cursor:pointer;
+    position:relative;
+}
+
 .primary-nav__links {
     font-size:1rem;
     position:relative;
@@ -21,3 +34,4 @@
 .text-mute{
     font-size:0.5rem;
 }
+
