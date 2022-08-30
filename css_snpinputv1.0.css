@@ -8,9 +8,9 @@
 
 
 /* -- header -- */
-.primary-header {
-    border-top: 3px solid  theme('colors.cust-logo-green'); ;
-}
+/* .header-container{
+    border-top: 5px solid  theme('colors.cust-logo-green'); ;
+} */
 
 
 .main-logo{
@@ -43,14 +43,27 @@
 
     .primary-nav-li:hover .primary-nav__links{
         border-radius: 50px;
-        background-color:  theme('colors.cust-logo-bluedark1');    
+        background-color:  theme('colors.cust-lightest-grey');    
     }
 
+    .primary-nav-li:hover  .primary-link__chevron{
+    
+        display: inline-block;
+        transform: rotate(270deg);
+        transform-origin:center;
+         
+        
+        
+    }
 
+    
     .primary-nav-li:hover .dropdown{
         
-        display: inline-block;
+        display: block;
         z-index: -1;
+         
+        
+       
     }
  
 
@@ -60,6 +73,20 @@
     position:relative;
     
 }
+
+.primary-link__icon{
+    margin-top:2px;
+    margin-left: 0.2rem;
+}
+.primary-link__chevron{
+    
+    display: inline-block;
+    transform: rotate(90deg);
+    transform-origin:center;
+    
+    
+}
+
 
 .text-mute{
     font-size:0.5rem;
@@ -82,4 +109,5 @@
     .main-logo-mobile{
         display: none;
     }
+    
 }
