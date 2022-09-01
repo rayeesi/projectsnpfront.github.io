@@ -51,19 +51,21 @@
         display: inline-block;
         transform: rotate(270deg);
         transform-origin:center;
-         
-        
-        
+          
     }
 
-    
+    .dropdown{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s ease-out;
+    }
     .primary-nav-li:hover .dropdown{
         
-        display: block;
+        visibility: visible;
+        opacity: 1;  
         z-index: -1;
          
-        
-       
+          
     }
  
 
