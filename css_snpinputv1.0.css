@@ -14,20 +14,19 @@
 
 
 .main-logo{
-    border:0;
-    width:180px;    
-    display: none;
-    /* width: clamp(100px,15vw,270px); */
+    border:0;       
+    width: clamp(160px,5px,180px); 
 }
 
-.main-logo-mobile{
-    display: block;
-    border:0;
-    width:140px;
-    /* width: clamp(100px,15vw,270px); */
+ 
+.hamburger-button{
+    background-image: url(../images/hamberger.svg);
+    width:40px;
+    height:40px;
+    background-position: center center;
+    background-repeat: no-repeat ;
+    
 }
-
-
 
 .header-container{
     height:65px;
@@ -108,8 +107,7 @@
     .main-logo{
         display: block;
     }
-    .main-logo-mobile{
-        display: none;
-    }
-    
+   
 }
+
+ 
