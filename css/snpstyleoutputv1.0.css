@@ -813,6 +813,7 @@ video {
 
 body,html{
   overflow-x: hidden;
+  height: 100%;
 }
 
 .main-logo{
@@ -890,14 +891,14 @@ body,html{
   ul.primary-nav{
     position: fixed;
     z-index: 1;
-    top:0;
+    top:0px;
     left:0;
     right:25%;
-    background: rgba(255,255,255,.95);
+    box-shadow: 5px 0px 5px 0px #cccccc;
+    background: rgba(239, 244, 246, 0.95);
     flex-direction: column;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    justify-content: start;
+    height:100vh;
   }
 
   .primary-nav-li{
@@ -919,6 +920,7 @@ body,html{
   .dropdown div:first-child {
     flex-direction: column;
     width:100%;
+    max-height: 100%;
   }
 
   .dropdown div ul{
