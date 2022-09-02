@@ -618,6 +618,10 @@ video {
   height: 1.5rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-80 {
   width: 20rem;
 }
@@ -815,9 +819,13 @@ video {
     border-top: 5px solid  theme('colors.cust-logo-green'); ;
 } */
 
+body,html{
+  overflow-x: hidden;
+}
+
 .main-logo{
   border:0;
-  width: clamp(160px,5px,180px);
+  width: 200px;
 }
 
 .hamburger-button{
@@ -886,8 +894,34 @@ video {
   font-weight: 700;
 }
 
-@media(min-width: 480px){
-  .main-logo{
+@media(max-width: 976px){
+  ul.primary-nav{
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    right:15%;
+    background: rgba(200,255,255,.95);
+    flex-direction: column;
+  }
+
+  .primary-nav-li{
+    position:relative;
+    z-index: -1;
+    background: rgba(179, 205, 77, 0.95);
+    padding: 5px 10px 5px 10px ;
+  }
+
+  .primary-nav-li:hover .dropdown{
+    z-index: 20000;
+    margin: 0 0;
+    left:0;
+    top:0;
+    position: relative;
+    background: rgba(0,0,0,.95);
+  }
+
+  .hamburger-button{
     display: block;
   }
 }
@@ -959,11 +993,6 @@ video {
 .focus\:ring-blue-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
-}
-
-.focus\:ring-cust-lighter-grey:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(233 233 247 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-cust-light-grey:focus {
