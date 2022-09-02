@@ -610,12 +610,12 @@ video {
   display: none;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-6 {
   height: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-80 {
@@ -624,10 +624,6 @@ video {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .flex-auto {
@@ -713,9 +709,9 @@ video {
   padding-right: 0.5rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .px-3 {
@@ -807,10 +803,6 @@ video {
 
 /* -- header -- */
 
-/* .header-container{
-    border-top: 5px solid  theme('colors.cust-logo-green'); ;
-} */
-
 body,html{
   overflow-x: hidden;
   height: 100%;
@@ -836,6 +828,7 @@ body,html{
 .primary-nav-li{
   position:relative;
   z-index: 1;
+  height:65px;
 }
 
 .primary-nav-li:hover .primary-nav__links{
@@ -888,36 +881,64 @@ body,html{
 }
 
 @media(max-width: 976px){
-  ul.primary-nav{
-    position: fixed;
-    z-index: 1;
-    top:0px;
+  .primary-header{
+    border: 0px solid blue;
+    position: absolute;
     left:0;
-    right:25%;
+    top:0;
+    justify-content: start;
+    justify-content: space-between;
+    height: 65px;
+  }
+
+  .nav-tag{
+    border: 0px solid green;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  ul.primary-nav{
+    position: relative;
+    z-index: 1;
+    top:0;
+    left:100;
+    margin: 65px 0;
+    min-width:250px;
+    max-width:75%;
     box-shadow: 5px 0px 5px 0px #cccccc;
     background: rgba(239, 244, 246, 0.95);
     flex-direction: column;
     justify-content: start;
-    height:100vh;
+    min-height:100vh;
+  }
+
+  .primary-nav__links{
+    font-size: 1.1rem;
+    justify-content: space-between;
   }
 
   .primary-nav-li{
     position:relative;
     z-index: -1;
-    padding: 5px 10px 5px 10px ;
+    border: 2px solid green;
   }
 
   .primary-nav-li:hover .dropdown{
-    z-index: 20000;
+    position: relative;
     margin: 0 0;
     left:0;
     top:0;
     width:100%;
-    position: relative;
-    background: rgba(206, 222, 227, 0.95);
+    background: rgba(218, 193, 213, 0.95);
   }
 
-  .dropdown div:first-child {
+  .dropdown .innerdropdown-div {
+    position: relative;
     flex-direction: column;
     width:100%;
     max-height: 100%;
