@@ -114,12 +114,12 @@ body,html{
         z-index: 1;
         top:0;
         left:0;
-        right:15%;
+        right:25%;
+         
         background: rgba(255,255,255,.95);
         flex-direction: column;
         height: fit-content;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
+         
         
         
     }
@@ -138,19 +138,26 @@ body,html{
         top:0;
         width:100%;
         position: relative;
-        background: rgba(151, 160, 171, 0.95);
+        background: rgba(206, 222, 227, 0.95);
+         
          
 
     }
-    .dropdown div,.dropdown div ul{
+    .dropdown div:first-child {
         flex-direction: column;
         width:100%;
-        
+       
+    }
+    .dropdown div ul{
+        width:100%;
+        margin: 5px 0;
     }
     .dropdown div ul li{
         
-        width:100%;
-        background: rgba(22, 72, 132, 0.95);
+        width:95%;
+        
+        margin-left:5px;
+        padding-left: 10px;
     }
 
     .hamburger-button{
