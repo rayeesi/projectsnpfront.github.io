@@ -107,33 +107,50 @@ body,html{
 
 
 @media(max-width: 976px){
+    
+    
     ul.primary-nav{
         position: fixed;
         z-index: 1;
         top:0;
         left:0;
         right:15%;
-        background: rgba(200,255,255,.95);
+        background: rgba(255,255,255,.95);
         flex-direction: column;
+        height: fit-content;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        
         
     }
-    .primary-nav-li{
-        
+    .primary-nav-li{        
         position:relative;
         z-index: -1;
-        background: rgba(179, 205, 77, 0.95);
+         
         padding: 5px 10px 5px 10px ;
-    }
-    
+        
+    }    
      
     .primary-nav-li:hover .dropdown{
         z-index: 20000;
         margin: 0 0;
         left:0;
         top:0;
+        width:100%;
         position: relative;
-        background: rgba(0,0,0,.95);
+        background: rgba(151, 160, 171, 0.95);
+         
 
+    }
+    .dropdown div,.dropdown div ul{
+        flex-direction: column;
+        width:100%;
+        
+    }
+    .dropdown div ul li{
+        
+        width:100%;
+        background: rgba(22, 72, 132, 0.95);
     }
 
     .hamburger-button{
