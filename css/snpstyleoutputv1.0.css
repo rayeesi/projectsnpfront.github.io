@@ -828,7 +828,9 @@ body,html{
 .primary-nav-li{
   position:relative;
   z-index: 1;
-  height:65px;
+  height:-webkit-fit-content;
+  height:-moz-fit-content;
+  height:fit-content;
 }
 
 .primary-nav-li:hover .primary-nav__links{
@@ -843,16 +845,24 @@ body,html{
 }
 
 .dropdown{
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s ease-out;
 }
 
-.primary-nav-li:hover .dropdown{
-  visibility: visible;
+.primary-nav-li:hover  .dropdown,
+    .primary-nav-li:focus-within  .dropdown,
+        .primary-nav-li:focus  .dropdown{
+  display: block;
+  /* visibility: visible; */
   opacity: 1;
   z-index: -1;
 }
+
+/* .dropdown:hover {
+        display: block;
+      } */
 
 .primary-nav__links {
   font-size:1rem;
@@ -883,7 +893,6 @@ body,html{
 @media(max-width: 976px){
   .primary-header{
     border: 0px solid blue;
-    position: absolute;
     left:0;
     top:0;
     justify-content: start;
@@ -893,6 +902,7 @@ body,html{
 
   .nav-tag{
     border: 0px solid green;
+    display: block;
     position: absolute;
     left:0;
     top:0;
@@ -925,16 +935,19 @@ body,html{
   .primary-nav-li{
     position:relative;
     z-index: -1;
-    border: 2px solid green;
+    border: 1px solid rgb(197, 196, 211);
   }
 
-  .primary-nav-li:hover .dropdown{
+  .primary-nav-li:hover  .dropdown,
+    .primary-nav-li:focus-within  .dropdown,
+        .primary-nav-li:focus  .dropdown{
     position: relative;
+    display: block;
     margin: 0 0;
     left:0;
     top:0;
     width:100%;
-    background: rgba(218, 193, 213, 0.95);
+    background: rgba(184, 214, 196, 0.95);
   }
 
   .dropdown .innerdropdown-div {
@@ -1007,16 +1020,21 @@ body,html{
   outline-offset: 2px;
 }
 
+.focus\:ring-1:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
 .focus\:ring:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\:ring-1:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+.focus\:ring-cust-light-grey:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(119 119 130 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-slate-200:focus {
@@ -1027,11 +1045,6 @@ body,html{
 .focus\:ring-blue-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
-}
-
-.focus\:ring-cust-light-grey:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(119 119 130 / var(--tw-ring-opacity));
 }
 
 .active\:bg-cust-logo-blue:active {
@@ -1076,6 +1089,10 @@ body,html{
 }
 
 @media (min-width: 976px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:block {
     display: block;
   }
