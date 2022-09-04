@@ -825,45 +825,6 @@ body,html{
   height:65px;
 }
 
-.primary-nav-li{
-  position:relative;
-  z-index: 1;
-  height:-webkit-fit-content;
-  height:-moz-fit-content;
-  height:fit-content;
-}
-
-.primary-nav-li:hover .primary-nav__links{
-  border-radius: 50px;
-  background-color:  #f0f3fa;
-}
-
-.primary-nav-li:hover  .primary-link__chevron{
-  display: inline-block;
-  transform: rotate(270deg);
-  transform-origin:center;
-}
-
-.dropdown{
-  /* visibility: hidden; */
-  display: none;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.3s ease-out;
-}
-
-.primary-nav-li:hover  .dropdown,
-    .primary-nav-li:focus-within  .dropdown,
-        .primary-nav-li:focus  .dropdown{
-  display: block;
-  /* visibility: visible; */
-  opacity: 1;
-  z-index: -1;
-}
-
-/* .dropdown:hover {
-        display: block;
-      } */
-
 .primary-nav__links {
   font-size:1rem;
   position:relative;
@@ -878,6 +839,43 @@ body,html{
   display: inline-block;
   transform: rotate(90deg);
   transform-origin:center;
+}
+
+.primary-nav-li{
+  position:relative;
+  z-index: 1;
+  height:-webkit-fit-content;
+  height:-moz-fit-content;
+  height:fit-content;
+}
+
+.primary-nav-li:hover .primary-nav__links{
+  border-radius: 50px;
+  background-color:  #f0f3fa;
+}
+
+.primary-nav-li:hover  .primary-link__chevron,
+    .primary-nav-li:focus  .primary-link__chevron,
+    .primary-nav-li:focus-within  .primary-link__chevron{
+  display: inline-block;
+  transform: rotate(270deg);
+  transform-origin:center;
+}
+
+.dropdown{
+  pointer-events: none;
+  opacity: 0;
+  transform:translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.primary-nav-li:hover  .dropdown,    
+    .primary-nav-li:focus-within  .dropdown,
+        .primary-nav-li:focus  .dropdown{
+  pointer-events: auto;
+  opacity: 1;
+  transform:translateY(0);
+  z-index: -1;
 }
 
 .text-mute{
@@ -932,13 +930,21 @@ body,html{
     justify-content: space-between;
   }
 
+  .primary-link__pill{
+    margin-right:10px;
+  }
+
   .primary-nav-li{
     position:relative;
     z-index: -1;
     border: 1px solid rgb(197, 196, 211);
   }
 
-  .primary-nav-li:hover  .dropdown,
+  .dropdown{
+    display: none;
+  }
+
+  .primary-nav-li:hover  .dropdown,    
     .primary-nav-li:focus-within  .dropdown,
         .primary-nav-li:focus  .dropdown{
     position: relative;
