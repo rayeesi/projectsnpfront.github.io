@@ -22,7 +22,8 @@ module.exports = {
         'cust-dark-grey': '#4c4f54',
         'cust-light-grey': '#777782',
         'cust-lighter-grey': '#e9e9f7',
-        'cust-lightest-grey': '#f0f3fa'
+        'cust-lightest-grey': '#f0f3fa',
+        'cust-bodyback': '#f5fafc'
         
       }
     },

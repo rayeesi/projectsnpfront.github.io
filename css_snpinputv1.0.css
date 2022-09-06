@@ -12,6 +12,8 @@
 body,html{
      overflow-x: hidden; 
      height: 100%;
+     position:relative;
+     /* background-color:  theme('colors.cust-lightest-grey');  */
 }
 
 .main-logo{
@@ -31,7 +33,19 @@ body,html{
 
 .header-container{
     height:65px;
+    background-color: white; 
 }
+
+.button-link{
+    border-radius: 50px;
+    padding: 0.5rem 1.25rem;
+    
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    vertical-align: baseline;
+
+}
+     
 
 .primary-nav__links {
     font-size:1rem;
@@ -65,8 +79,8 @@ body,html{
 .primary-link__pill{
     position: absolute;
     padding:.15rem;
-    right:-5px;
-    top:-5px;
+    right:-6px;
+    top:-6px;
     font-size: .5rem;
     font-weight: 300;
     color:white;
@@ -155,33 +169,36 @@ body,html{
         top:0;
         justify-content: start;
         justify-content: space-between; 
-         
+        z-index: 1;
         height: 65px;
         
      }
     
     .nav-tag{
-        border: 1px solid green;
+        border: 0px solid green;        
         display: block;
         position: absolute;
-        left:0;
+        
+        left:0px;
         top:0;
         width: 100%;
-         pointer-events: none;
+        z-index: -1;
+         
+         
         height: fit-content;
     }
 
     ul.primary-nav{
         position: relative;
         
-        z-index: 1;
+        z-index: 3;
         top:0;
-        left:100;
+         
         margin: 65px 0;
         min-width:250px; 
         max-width:75%;
-        box-shadow: 5px 0px 5px 0px #cccccc; 
-        background: rgba(239, 244, 246, 0.95);
+        box-shadow: 5px 0px 5px 0px rgba(150, 150, 170, 0.5); 
+        background: rgb(239, 244, 246);
         flex-direction: column;
         justify-content: start;
          
