@@ -9,9 +9,9 @@
 
 /* -- header -- */
  
-body{
+body,html{
      overflow-x: hidden; 
-  
+     height: 100%;
      position:relative;
      /* background-color:  theme('colors.cust-lightest-grey');  */
      
@@ -177,24 +177,6 @@ body{
   
 }
 
-.search-bar{
-    display: block;
-    position: fixed;
-    top:0px; 
-    left:0;
-    z-index: 2000;
-    transform: translateY(calc(-100% - 1rem));
-    transition: 250ms transform ease-in-out;
-    
-}
-
-.search-bar[data-expanded="false"]{
-    transform: translateY(calc(-100% - 1rem));
-}
-
-.search-bar[data-expanded="true"]{
-    transform: translateY(0);
-}
  
     .checkcustvar {
         color: theme('colors.cust-logo-bluedark1'); ;   
@@ -202,19 +184,13 @@ body{
         font-weight: 700;
     }
  
-.ticker  > * {
-    font-weight:300;
-}
-
-
-
 
 
 @media(max-width: 976px){
     .main-logo{
         border:0;       
-        width: 180px; 
-        height:28px;
+        width: 160px; 
+        height:27px;
     }
    
     
@@ -241,12 +217,11 @@ body{
         z-index: -1;
          
          
-      
+        height: fit-content;
     }
 
     .primary-nav[data-visible="true"]{
         transform: translateX(0);
-        left:0;
 
     }
 
@@ -255,8 +230,8 @@ body{
         
         z-index: 3;
         top:0;        
-        transform: translateX(-110%);/*left:-350px; slide nav*/
-        left:0;
+        transform: translateX(calc(-100% - 6px));/*left:-350px; slide nav*/
+        
         margin: 65px 0;
         min-width:250px; 
         max-width:75%;

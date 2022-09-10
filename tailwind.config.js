@@ -21,7 +21,7 @@ module.exports = {
         'cust-pri-clr': '#184bb2',
         'cust-sec-clr': '#019934',
         'cust-dark-grey': '#4c4f54',
-        'cust-light-grey': '#777782',
+        'cust-light-grey': '#a1a4b3',
         'cust-lighter-grey': '#e9e9f7',
         'cust-lightest-grey': '#f0f3fa',
         'cust-bodyback': '#f5fafc'

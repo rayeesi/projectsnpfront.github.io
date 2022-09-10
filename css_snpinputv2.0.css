@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ 
+
+
+
+/* -- header -- */
+/*############# this CSS is for testing only  ####################### */
+.main-logo{
+    border:0;       
+    width: 200px; 
+    height:34px;
+}
+.primary-nav-ul{
+    justify-items: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left:0;
+    
+}
+
+.primarynav-li{
+    background: #cccccc;
+     
+    width:100%;
+    display: block; 
+   
+     
+}
+
+.primarynav-li:hover .nav,.primarynav-li:focus .nav{
+    background: #d9d9f2;
+    
+    top: 0;
+    position: relative; 
+    display: block;
+     
+}
+
+/* test for test2.html */
+
+.market_link{
+display: block;
+background-color: aquamarine;
+}
+
+
+.market_link_dropdown {
+display: none;
+background-color:aqua;
+}
+
+.market_link:hover .market_link_dropdown{
+    display: block;
+    
+     
+    top:0;
+    background-color: rgb(185, 255, 127);
+    }
