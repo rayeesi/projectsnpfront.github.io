@@ -38,7 +38,8 @@
         background: #555; 
       }
 
-body{
+
+body,html{
      overflow-x: hidden; 
     
      position:relative;
