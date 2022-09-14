@@ -56,11 +56,13 @@ body,html{
 
 .main-logo{
     border:0;       
-    width: 200px; 
-    height:34px;
+    width: 220px; 
+    height:36px;
 }
 
- 
+.rightpanel-table tbody tr:nth-child(odd) {
+    background: theme('colors.cust-lightest-grey'); 
+} 
 
 article{
     margin: 1rem 0;
