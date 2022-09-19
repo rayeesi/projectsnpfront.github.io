@@ -259,10 +259,10 @@ article{
     @apply  px-2  mb-2 text-lg font-bold border-l-4 border-cust-sec-clr ml-2 pl-2 bg-cust-lightest-grey;
 }
 .side-panel__links{
-    @apply block transition mt-1 px-2 py-1   border-b-2  border-dotted border-cust-lighter-grey bg-white text-cust-dark-grey    text-lg hover:text-black hover:bg-cust-lighter-grey   hover:rounded-md;
+    @apply block transition mt-1 px-2 py-1   border-b-2  border-dotted border-cust-lighter-grey bg-white text-cust-dark-grey  font-semibold     hover:text-black hover:bg-cust-lighter-grey   hover:rounded-md;
 }
 .side-panel__symbol{
-    @apply p-0.5 px-1 bg-cust-lighter-grey rounded-md text-base;
+    @apply p-0.5 px-1 bg-cust-lighter-grey rounded-md text-sm;
 }
 
 .side-panel__normal-title{
@@ -325,8 +325,16 @@ article{
 }
 .footer-social-box{
     @apply p-2 border-t md:border-t-0    border-dotted  border-cust-dark-grey;
+}
+.social-box-icons{
+    @apply  p-2 bg-white  rounded-full self-center border  hover:border-cust-dark-grey; 
+}
+.social-box-text-block{
+    @apply flex gap-2 p-2 bg-white  rounded-full my-2  self-center border text-xs hover:border-cust-light-grey; 
 } 
-
+.footer-grey-strip{
+    @apply relative p-3 flex flex-wrap justify-between bg-cust-darkest-grey text-white; 
+}
 
 @media(max-width: 976px){
     .main-logo{
