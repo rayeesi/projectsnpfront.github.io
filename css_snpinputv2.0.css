@@ -50,8 +50,8 @@ body,html{
 
 .main-logo{
     border:0;       
-    width: 220px; 
-    height:36px;
+    width: 230px; 
+    height:37px;
 }
 
 .rightpanel-table tbody tr:nth-child(odd) {
@@ -252,7 +252,7 @@ article{
 }
 
 .side-panel{
-    @apply relative flex-none   min-w-[300px]     md:max-w-[320px]  bg-white  mt-4   px-4 md:px-0  rounded-md  shadow-md; 
+    @apply relative flex-none   min-w-[300px]     md:max-w-[320px]  bg-white  mt-4   px-2 md:px-0  rounded-md  shadow-md; 
 }
 
 .side-panel__green-title{
@@ -270,7 +270,7 @@ article{
 }
 
 .side-panel-avatar-links{
-    @apply flex items-center gap-2 block    p-2 text-sm hover:bg-cust-lightest-grey rounded-md font-bold;
+    @apply flex items-center gap-2 block    p-2 text-base md:text-sm hover:bg-cust-lightest-grey rounded-md font-bold;
 }
 .avatar-img-10{
     @apply aspect-square rounded-full w-10;
@@ -315,13 +315,17 @@ article{
     @apply grow p-0 md:p-2 flex flex-wrap;
 }
 .footer-links-ul{
-    @apply block md:flex md:flex-col mx-3 w-full md:w-auto mb-4 grow;
+    @apply block   md:flex md:flex-col mx-3 w-full md:w-auto mb-4 grow;
 }
 .footer-links-li-title{
-    @apply block border-b border-dotted border-cust-dark-grey p-1 pr-4 text-lg md:text-base;
+    @apply block border-b border-dotted border-cust-dark-grey p-1 md:pr-4  text-lg md:text-base;
 }
+.footer-links-ul li{
+    @apply text-center md:text-left;
+}
+
 .footer-links{
-    @apply transition py-1   text-lg md:text-base     inline-block text-cust-darker-grey hover:translate-x-1.5 hover:text-black hover:underline hover:decoration-cust-light-grey;
+    @apply transition py-1     text-lg  md:text-base     inline-block text-cust-darker-grey hover:translate-x-1.5 hover:text-black hover:underline hover:decoration-cust-light-grey;
 }
 .footer-social-box{
     @apply p-2 border-t md:border-t-0    border-dotted  border-cust-dark-grey;
@@ -333,7 +337,7 @@ article{
     @apply flex gap-2 p-2 bg-white  rounded-full my-2  self-center border text-xs hover:border-cust-light-grey; 
 } 
 .footer-grey-strip{
-    @apply relative p-3 flex flex-wrap justify-between bg-cust-darkest-grey text-white; 
+    @apply relative p-3 flex flex-wrap justify-center md:justify-between text-center md:text-left  bg-cust-darkest-grey text-white; 
 }
 .link-dark-grey{
     @apply font-semibold text-cust-dark-grey hover:underline hover:text-black inline-block;
