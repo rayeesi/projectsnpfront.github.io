@@ -259,10 +259,10 @@ article{
     @apply  px-2  mb-2 text-lg font-bold border-l-4 border-cust-sec-clr ml-2 pl-2 bg-cust-lightest-grey;
 }
 .side-panel__links{
-    @apply block transition mt-1 px-2 py-1   border-b-2  border-dotted border-cust-lighter-grey bg-white text-cust-dark-grey  font-semibold     hover:text-black hover:bg-cust-lighter-grey   hover:rounded-md;
+    @apply block transition mt-1 px-2 py-1   border-b-2  border-dotted border-cust-lighter-grey bg-white text-cust-dark-grey text-lg md:text-base   font-semibold     hover:text-black hover:bg-cust-lighter-grey   hover:rounded-md;
 }
 .side-panel__symbol{
-    @apply p-0.5 px-1 bg-cust-lighter-grey rounded-md text-sm;
+    @apply p-0.5 px-1 bg-cust-lighter-grey rounded-md text-lg md:text-base;
 }
 
 .side-panel__normal-title{
