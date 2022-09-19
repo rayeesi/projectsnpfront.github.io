@@ -335,6 +335,13 @@ article{
 .footer-grey-strip{
     @apply relative p-3 flex flex-wrap justify-between bg-cust-darkest-grey text-white; 
 }
+.link-dark-grey{
+    @apply font-semibold text-cust-dark-grey hover:underline hover:text-black inline-block;
+}
+.most-active-inside{
+     @apply flex justify-between  py-1;
+    }
+
 
 @media(max-width: 976px){
     .main-logo{
