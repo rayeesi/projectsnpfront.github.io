@@ -1364,7 +1364,8 @@ video {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #555;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -1382,6 +1383,7 @@ div::-webkit-scrollbar-track {
 
 div::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 0.5rem;
 }
 
 div::-webkit-scrollbar-thumb:hover {
