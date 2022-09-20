@@ -47,7 +47,7 @@ body,html{
      
 }
  
-
+ 
 .main-logo{
     border:0;       
     width: 230px; 
@@ -81,11 +81,12 @@ article{
  
 .button-link{
     @apply transition  rounded-full p-1.5 px-3 mx-1  hover:shadow-md active:shadow-md focus:outline-none focus:ring-1 focus:ring-blue-300;    
-     
-    
-
+      
 }
-     
+
+.drop-down-button .primary-link__text,.drop-down-button .primary-link__icon{
+    pointer-events: none;
+}
 
 .primary-nav__links {
     font-size:1rem;
@@ -171,8 +172,10 @@ article{
         opacity: 0;
        
         transform:translateY(-10px);
-        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;    
     }
+    
+    
     .primary-nav-li:hover  .dropdown,    
     .primary-nav-li:focus-within  .dropdown,
         .primary-nav-li:focus  .dropdown{
@@ -205,7 +208,7 @@ article{
     position: fixed;
     top:0px; 
     left:0;
-    z-index: 2000;
+    z-index: 10;
     transform: translateY(calc(-100% - 1rem));
     transition: 250ms transform ease-in-out;
     
@@ -345,15 +348,19 @@ article{
 .most-active-inside{
      @apply flex justify-between  py-1;
     }
-
+ 
 
 @media(max-width: 976px){
+    
     .main-logo{
         border:0;       
         width: 180px; 
         height:28px;
     }
-   
+    .dropdown{
+        display: none;
+    } 
+
     
     .primary-header{
         border: 0px solid blue;
@@ -422,13 +429,12 @@ article{
           
         
     }    
-    .dropdown{
-        display: none;
-    } 
 
-    .primary-nav-li:hover  .dropdown,    
+    /* .primary-nav-li:hover  .dropdown,    
     .primary-nav-li:focus-within  .dropdown,
-        .primary-nav-li:focus  .dropdown{
+        .primary-nav-li:focus  .dropdown */
+
+    .primary-nav-li.active .dropdown{
         position: relative;
         display: block;
         margin: 0 0;
@@ -437,9 +443,7 @@ article{
         width:100%;
         
         background: white;
-         
-         
-
+          
     }
 
     .dropdown .innerdropdown-div {

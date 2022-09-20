@@ -571,12 +571,20 @@ video {
   top: 3rem;
 }
 
-.top-3 {
-  top: 0.75rem;
+.top-\[70px\] {
+  top: 70px;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .right-0 {
   right: 0px;
+}
+
+.top-3 {
+  top: 0.75rem;
 }
 
 .top-\[45px\] {
@@ -593,6 +601,10 @@ video {
 
 .-z-10 {
   z-index: -10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .m-0 {
@@ -752,6 +764,10 @@ video {
   height: 1.75rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-\[70px\] {
   height: 70px;
 }
@@ -788,6 +804,10 @@ video {
   width: 91.666667%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -798,10 +818,6 @@ video {
 
 .w-\[40ch\] {
   width: 40ch;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .w-\[400px\] {
@@ -1023,6 +1039,11 @@ video {
 .bg-cust-sec-clr {
   --tw-bg-opacity: 1;
   background-color: rgb(1 153 52 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-cust-darker-grey {
@@ -1284,6 +1305,10 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.opacity-70 {
+  opacity: 0.7;
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1434,6 +1459,10 @@ article{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.drop-down-button .primary-link__text,.drop-down-button .primary-link__icon{
+  pointer-events: none;
+}
+
 .primary-nav__links {
   font-size:1rem;
   position:relative;
@@ -1544,7 +1573,7 @@ article{
   position: fixed;
   top:0px;
   left:0;
-  z-index: 2000;
+  z-index: 10;
   transform: translateY(calc(-100% - 1rem));
   transition: 250ms transform ease-in-out;
 }
@@ -2146,6 +2175,10 @@ article{
     height:28px;
   }
 
+  .dropdown{
+    display: none;
+  }
+
   .primary-header{
     border: 0px solid blue;
     left:0;
@@ -2206,13 +2239,11 @@ article{
     border-bottom: 1px solid #e9e9f7;
   }
 
-  .dropdown{
-    display: none;
-  }
-
-  .primary-nav-li:hover  .dropdown,    
+  /* .primary-nav-li:hover  .dropdown,    
     .primary-nav-li:focus-within  .dropdown,
-        .primary-nav-li:focus  .dropdown{
+        .primary-nav-li:focus  .dropdown */
+
+  .primary-nav-li.active .dropdown{
     position: relative;
     display: block;
     margin: 0 0;

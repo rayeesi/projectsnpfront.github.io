@@ -50,6 +50,29 @@ const hamburgerToggler = document.querySelector('.hamburger-button');
 
 // Navbar toggle ends
 
+// ################## //
+//  Dropdown Menu //
+// inspired by webdevsimplified tutorial
+document.addEventListener('click', e => {
+     const isDropdownButton = e.target.matches(".drop-down-button");
+     if(!isDropdownButton && e.target.closest(".contain-drop-down") != null ) return;
+     console.log(isDropdownButton);
+    let currentDropdown;
+     if (isDropdownButton){
+        console.log("isdrop");
+         currentDropdown = e.target.closest(".contain-drop-down");
+         currentDropdown.classList.toggle('active');
+     }
+
+     document.querySelectorAll(".contain-drop-down.active").forEach(dropDown =>{
+        if(dropDown === currentDropdown) return;
+        dropDown.classList.remove('active');
+     });
+
+  
+})    
+ 
+
 // ############################################################### //
 // search bar toggle
 const searchBar = document.querySelector('.search-bar');
