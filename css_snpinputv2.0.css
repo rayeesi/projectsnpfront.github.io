@@ -52,8 +52,8 @@ body,html{
  
 .main-logo{
     border:0;       
-    width: 230px; 
-    height:37px;
+    width: 226px; 
+    height:38px;
 }
 
 .rightpanel-table tbody tr:nth-child(odd) {
@@ -329,10 +329,10 @@ article{
     @apply py-2 hover:underline   ;
 }
 .table-link-green {
-    @apply py-2 hover:underline  text-cust-sec-clr ;
+    @apply py-2 hover:underline  text-green-700 ;
 }
 .table-link-red {
-    @apply py-2 hover:underline text-red-500  ;
+    @apply py-2 hover:underline text-red-600 ;
 }
 .table-link-grey {
     @apply py-2 hover:underline  text-cust-dark-grey  ;
@@ -397,8 +397,8 @@ article{
     
     .main-logo{
         border:0;       
-        width: 180px; 
-        height:28px;
+        width: 215px; 
+        height:36px;
     }
     .dropdown{
         display: none;
