@@ -256,6 +256,47 @@ article{
     @apply  block p-2 text-cust-darker-grey font-bold hover:underline hover:decoration-cust-sec-clr  leading-5 ; 
 }
 
+.box-news{
+    @apply relative p-4 border border-cust-lighter-grey rounded-md mt-2 sm:mt-1   hover:bg-cust-lightest-grey ;
+}
+.box-news__source{
+    @apply py-1 font-semibold text-sm text-cust-dark-grey;
+}
+.box-news__title{
+    @apply py-1;
+}
+.box-news__date{
+    @apply py-1 text-xs;
+}
+
+.table-responsive{
+    @apply block w-full overflow-x-auto py-1;
+}
+.table-space-none{
+    border-spacing: 0;
+    padding:0;
+    border-collapse: collapse;
+    
+}
+.trend-ticker-box{
+    @apply hover:shadow-md hover:border-cust-light-grey  border rounded-md border-cust-lighter-grey p-3 w-[200px]   h-full;
+}
+.trend-ticker-box__symbol{
+    @apply p-1 text-sm  inline-block rounded-md text-white;
+}
+.trend-ticker-box__name{
+    @apply w-[20ch]  h-[55px] overflow-y-auto;
+}
+.trend-ticker-box__price{
+    @apply font-semibold;
+}
+.trend-ticker-box__change{
+    @apply     text-sm px-2 font-semibold;
+}
+.trend-ticker-box__trend{
+    @apply  text-sm p-1 px-2 rounded-md text-black;
+}
+
 .side-panel{
     @apply relative flex-none   min-w-[300px]     md:max-w-[320px]  bg-white  mt-4   px-2 md:px-0  rounded-md  shadow-md; 
 }
