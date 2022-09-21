@@ -352,16 +352,30 @@ data-expanded="false" >
 <div class="ticker h-[62px] md:h-[40px]  border-b border-dotted border-cust-light-grey  ">
     <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container    ">
-    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-container__widget ticker-widget"></div>
     <div class="tradingview-widget-copyright   ">
         <a href="https://in.tradingview.com/markets/" rel="noopener" target="_blank" class=" text-mute flex justify-end p-0 m-0  ">
             <span class=" text-cust-light-grey   p-0 m-0 leading-3">Markets by TradingView</span></a> 
         </div>
-    <!-- ticker Widget script will be inserted here -->
-    
-   <script>
-    // ticker Widgetscript
-    {
+
+        <script  language="javascript" >
+            document.addEventListener('DOMContentLoaded', (event) => {
+            
+                let headticker = document.querySelector(".ticker-widget");    
+                let loadJS = function(src) {
+                  let jsLink = document.createElement("script");
+                  jsLink.onload = function() {              
+                      console.log("javascript file loaded");    
+                    };        
+                  jsLink.onerror = function() {              
+                      console.log("javascript file Error in loading");
+                    };
+
+                  
+                    jsLink.async; 
+                    jsLink.defer; 
+                    jsLink.type = "application/javascript";  
+                    jsLink.text =`{
     "symbols": [
       {
         "proName": "FOREXCOM:SPXUSD",
@@ -393,9 +407,22 @@ data-expanded="false" >
     "isTransparent": true,
     "displayMode": "adaptive",
     "locale": "us"
-  }
-    </script>
+  }`  ;
+            
+                  jsLink.src = src;      
+                  jsLink.crossorigin = "anonymous";      
+                  headticker.appendChild(jsLink);	      
+                };
+                console.log("javascript file updated");
+                      window.setTimeout(function(){
+                          //hometickerwidget
+                          loadJS("https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"); // google auto ads
+                 
+                      },5000); 
+                });
+            </script>
 
+    
   </div>
   <!-- TradingView Widget END -->
 </div>
@@ -423,7 +450,9 @@ data-expanded="false" >
                 px-2 md:px-0 border rounded-md">
                     <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container h-[210px]">
-    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-container__widget chart-widget">
+        
+    </div>
     <div class="tradingview-widget-copyright">
         
         <a href="https://in.tradingview.com/symbols/CME_MINI-ES1!/" rel="noopener" target="_blank" class="text-mute flex justify-end">
@@ -433,25 +462,54 @@ data-expanded="false" >
 
     </div>
     
-   <!-- chart widget script here -->
-   
-<script>
-    // Chart Widget Script
-    {
-    "symbol": "CME_MINI:ES1!",
-    "width": "300",
-    "height": "200",
-    "locale": "in",
-    "dateRange": "1M",
-    "colorTheme": "light",
-    "trendLineColor": "rgba(41, 98, 255, 0.5)",
-    "underLineColor": "rgba(41, 98, 255, 0.3)",
-    "underLineBottomColor": "rgba(66, 66, 66, 0)",
-    "isTransparent": true,
-    "autosize": true,
-    "largeChartUrl": ""
-  }
-    </script>
+    <script  language="javascript" >
+        document.addEventListener('DOMContentLoaded', (event) => {
+        
+            let headticker = document.querySelector(".chart-widget");    
+            let loadJS = function(src) {
+              let jsLink = document.createElement("script");
+              jsLink.onload = function() {              
+                  console.log("javascript file loaded");    
+                  
+                };        
+              jsLink.onerror = function() {              
+                  console.log("javascript file Error in loading");
+                };
+        
+              jsLink.async; 
+              jsLink.defer; 
+              jsLink.type = "application/javascript";  
+              jsLink.text =`{
+          "symbol": "CME_MINI:ES1!",
+          "width": "300",
+          "height": "200",
+          "locale": "in",
+          "dateRange": "1M",
+          "colorTheme": "light",
+          "trendLineColor": "rgba(41, 98, 255, 0.5)",
+          "underLineColor": "rgba(41, 98, 255, 0.3)",
+          "underLineBottomColor": "rgba(66, 66, 66, 0)",
+          "isTransparent": true,
+          "autosize": true,
+          "largeChartUrl": ""
+        }`;
+              jsLink.src = src;      
+              jsLink.crossorigin = "anonymous";      
+              
+              headticker.appendChild(jsLink);	      
+            };
+            console.log("javascript file updated");
+            
+                  window.setTimeout(function(){
+                      //hometickerwidget
+                      loadJS("https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js");  
+             
+                  },5000); 
+            });
+            
+        </script>
+    
+          
   </div>
   <!-- TradingView Widget END -->
                 </div>        
@@ -1461,44 +1519,7 @@ data-expanded="false" >
 </body>
 <script src="entryv1.0.js" defer ></script>
 
-<script  language="javascript" >
-    document.addEventListener('DOMContentLoaded', (event) => {
-    
-        let head = document.querySelector("head");
-    
-        let loadJS = function(src) {
-          let jsLink = document.createElement("script");
-          jsLink.onload = function() {
-              newsldconact = "no";
-              console.log("javascript file loaded");
-    
-            };        
-          jsLink.onerror = function() {
-              newsldconact = "yes";
-              console.log("javascript file Error in loading");
-            };
-    
-          jsLink.src = src;      
-          jsLink.crossorigin = "anonymous";      
-          head.appendChild(jsLink);	      
-        };
-        console.log("javascript file updated");
-              window.setTimeout(function(){
-                  //hometickerwidget
-                  loadJS("https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"); // google auto ads
-         
-              },5000);
-              window.setTimeout(function(){
-                  //homecharwidget                  
-                  loadJS("https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js");  
-                        
-              },7000);
-    
-    
-    
-        });
-    </script>
-    
-    
 
+    
+    
 </html>
