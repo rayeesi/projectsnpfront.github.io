@@ -1844,10 +1844,19 @@ article{
   display: inline-block;
   border-radius: 0.375rem;
   padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .trend-ticker-box__symbol {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 .trend-ticker-box__name {

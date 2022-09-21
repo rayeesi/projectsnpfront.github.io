@@ -282,7 +282,7 @@ article{
     @apply hover:shadow-md hover:border-cust-light-grey  border rounded-md border-cust-lighter-grey p-3 w-[200px]   h-full;
 }
 .trend-ticker-box__symbol{
-    @apply p-1 text-sm  inline-block rounded-md text-white;
+    @apply p-1 text-sm md:text-xs  inline-block rounded-md text-white px-2;
 }
 .trend-ticker-box__name{
     @apply w-[20ch]  h-[55px] overflow-y-auto;
