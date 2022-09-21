@@ -357,41 +357,7 @@ data-expanded="false" >
         <a href="https://in.tradingview.com/markets/" rel="noopener" target="_blank" class=" text-mute flex justify-end p-0 m-0  ">
             <span class=" text-cust-light-grey   p-0 m-0 leading-3">Markets by TradingView</span></a> 
         </div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async defer >
-    {
-    "symbols": [
-      {
-        "proName": "FOREXCOM:SPXUSD",
-        "title": "S&P 500"
-      },
-      {
-        "proName": "FOREXCOM:NSXUSD",
-        "title": "US 100"
-      },
-      {
-        "proName": "FX_IDC:EURUSD",
-        "title": "EUR/USD"
-      },
-      {
-        "proName": "BITSTAMP:BTCUSD",
-        "title": "Bitcoin"
-      },
-      {
-        "proName": "BITSTAMP:ETHUSD",
-        "title": "Ethereum"
-      },
-      {
-        "description": "Nasdaq Comp.",
-        "proName": "NASDAQ:IXIC"
-      }
-    ],
-    "showSymbolLogo": false,
-    "colorTheme": "light",
-    "isTransparent": true,
-    "displayMode": "adaptive",
-    "locale": "us"
-  }
-    </script>
+    <!-- Widgetscript will be inserted here -->
   </div>
   <!-- TradingView Widget END -->
 </div>
@@ -428,22 +394,7 @@ data-expanded="false" >
 
 
     </div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async defer>
-    {
-    "symbol": "CME_MINI:ES1!",
-    "width": "300",
-    "height": "200",
-    "locale": "in",
-    "dateRange": "1M",
-    "colorTheme": "light",
-    "trendLineColor": "rgba(41, 98, 255, 0.5)",
-    "underLineColor": "rgba(41, 98, 255, 0.3)",
-    "underLineBottomColor": "rgba(66, 66, 66, 0)",
-    "isTransparent": true,
-    "autosize": true,
-    "largeChartUrl": ""
-  }
-    </script>
+   <!-- chart widget script here -->
   </div>
   <!-- TradingView Widget END -->
                 </div>        
@@ -1452,4 +1403,97 @@ data-expanded="false" >
     
 </body>
 <script src="entryv1.0.js" defer ></script>
+
+<script  language="javascript" >
+    document.addEventListener('DOMContentLoaded', (event) => {
+    
+        let head = document.querySelector("head");
+    
+        let loadJS = function(src) {
+          let jsLink = document.createElement("script");
+          jsLink.onload = function() {
+              newsldconact = "no";
+              console.log("javascript file loaded");
+    
+            };        
+          jsLink.onerror = function() {
+              newsldconact = "yes";
+              console.log("javascript file Error in loading");
+            };
+    
+          jsLink.src = src;      
+          jsLink.crossorigin = "anonymous";      
+          head.appendChild(jsLink);	      
+        };
+        console.log("javascript file updated");
+              window.setTimeout(function(){
+                  //hometickerwidget
+                  loadJS("https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"); // google auto ads
+         
+              },5000);
+              window.setTimeout(function(){
+                  //homecharwidget                  
+                  loadJS("https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js");  
+                        
+              },7000);
+    
+    
+    
+        });
+    </script>
+    
+    <script>
+        // ticker Widgetscript
+        {
+        "symbols": [
+          {
+            "proName": "FOREXCOM:SPXUSD",
+            "title": "S&P 500"
+          },
+          {
+            "proName": "FOREXCOM:NSXUSD",
+            "title": "US 100"
+          },
+          {
+            "proName": "FX_IDC:EURUSD",
+            "title": "EUR/USD"
+          },
+          {
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "Bitcoin"
+          },
+          {
+            "proName": "BITSTAMP:ETHUSD",
+            "title": "Ethereum"
+          },
+          {
+            "description": "Nasdaq Comp.",
+            "proName": "NASDAQ:IXIC"
+          }
+        ],
+        "showSymbolLogo": false,
+        "colorTheme": "light",
+        "isTransparent": true,
+        "displayMode": "adaptive",
+        "locale": "us"
+      }
+        </script>
+
+<script>
+    // Chart Widget Script
+    {
+    "symbol": "CME_MINI:ES1!",
+    "width": "300",
+    "height": "200",
+    "locale": "in",
+    "dateRange": "1M",
+    "colorTheme": "light",
+    "trendLineColor": "rgba(41, 98, 255, 0.5)",
+    "underLineColor": "rgba(41, 98, 255, 0.3)",
+    "underLineBottomColor": "rgba(66, 66, 66, 0)",
+    "isTransparent": true,
+    "autosize": true,
+    "largeChartUrl": ""
+  }
+    </script>
 </html>
