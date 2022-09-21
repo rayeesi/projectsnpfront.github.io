@@ -357,7 +357,45 @@ data-expanded="false" >
         <a href="https://in.tradingview.com/markets/" rel="noopener" target="_blank" class=" text-mute flex justify-end p-0 m-0  ">
             <span class=" text-cust-light-grey   p-0 m-0 leading-3">Markets by TradingView</span></a> 
         </div>
-    <!-- Widgetscript will be inserted here -->
+    <!-- ticker Widget script will be inserted here -->
+    
+   <script>
+    // ticker Widgetscript
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      },
+      {
+        "description": "Nasdaq Comp.",
+        "proName": "NASDAQ:IXIC"
+      }
+    ],
+    "showSymbolLogo": false,
+    "colorTheme": "light",
+    "isTransparent": true,
+    "displayMode": "adaptive",
+    "locale": "us"
+  }
+    </script>
+
   </div>
   <!-- TradingView Widget END -->
 </div>
@@ -394,7 +432,26 @@ data-expanded="false" >
 
 
     </div>
+    
    <!-- chart widget script here -->
+   
+<script>
+    // Chart Widget Script
+    {
+    "symbol": "CME_MINI:ES1!",
+    "width": "300",
+    "height": "200",
+    "locale": "in",
+    "dateRange": "1M",
+    "colorTheme": "light",
+    "trendLineColor": "rgba(41, 98, 255, 0.5)",
+    "underLineColor": "rgba(41, 98, 255, 0.3)",
+    "underLineBottomColor": "rgba(66, 66, 66, 0)",
+    "isTransparent": true,
+    "autosize": true,
+    "largeChartUrl": ""
+  }
+    </script>
   </div>
   <!-- TradingView Widget END -->
                 </div>        
@@ -1442,58 +1499,6 @@ data-expanded="false" >
         });
     </script>
     
-    <script>
-        // ticker Widgetscript
-        {
-        "symbols": [
-          {
-            "proName": "FOREXCOM:SPXUSD",
-            "title": "S&P 500"
-          },
-          {
-            "proName": "FOREXCOM:NSXUSD",
-            "title": "US 100"
-          },
-          {
-            "proName": "FX_IDC:EURUSD",
-            "title": "EUR/USD"
-          },
-          {
-            "proName": "BITSTAMP:BTCUSD",
-            "title": "Bitcoin"
-          },
-          {
-            "proName": "BITSTAMP:ETHUSD",
-            "title": "Ethereum"
-          },
-          {
-            "description": "Nasdaq Comp.",
-            "proName": "NASDAQ:IXIC"
-          }
-        ],
-        "showSymbolLogo": false,
-        "colorTheme": "light",
-        "isTransparent": true,
-        "displayMode": "adaptive",
-        "locale": "us"
-      }
-        </script>
+    
 
-<script>
-    // Chart Widget Script
-    {
-    "symbol": "CME_MINI:ES1!",
-    "width": "300",
-    "height": "200",
-    "locale": "in",
-    "dateRange": "1M",
-    "colorTheme": "light",
-    "trendLineColor": "rgba(41, 98, 255, 0.5)",
-    "underLineColor": "rgba(41, 98, 255, 0.3)",
-    "underLineBottomColor": "rgba(66, 66, 66, 0)",
-    "isTransparent": true,
-    "autosize": true,
-    "largeChartUrl": ""
-  }
-    </script>
 </html>
