@@ -122,14 +122,14 @@ article{
 }
 .primary-link__pill{
     position: absolute;
-    padding:.15rem;
-    right:-6px;
+    padding:.15rem;     
+    right:-10px;
     top:-6px;
     font-size: .5rem;
     font-weight: 300;
     color:white;
     background-color: theme('colors.cust-sec-clr');  
-    border-radius: 10px;
+    border-radius: 50%;
     
 }
 .primary-link__chevron{
@@ -195,6 +195,9 @@ article{
     }
     .innerdropdown__spantitle{
         display: block;
+        font-size:1em;
+        font-weight: 500;
+
     }
     .innerdropdown__spandescription{
         display: block;
