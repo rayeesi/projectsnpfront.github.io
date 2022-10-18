@@ -227,6 +227,14 @@ article{
 .search-bar[data-expanded="true"]{
     transform: translateY(0);
 }
+
+
+.bi{
+    width:1em;
+    height:1em;
+    
+}
+
  
 .tag-light-grey{
     @apply text-cust-darker-grey rounded-md  p-1 px-2 mr-3 my-1 border border-cust-light-grey bg-cust-lighter-grey hover:bg-white hover:border-cust-dark-grey;
