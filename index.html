@@ -1,632 +1,744 @@
 <!DOCTYPE html>
-<html lang="en"  >
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/snpstyleoutputv2.0.css">
+    <link rel="stylesheet" href="css/snpstyleoutputv2.0.css" />
     <title>Snp Front End</title>
-</head>
-<body class="relative " >
-
+  </head>
+  <body class="relative">
     <!-- part 1 header -->
-    
-    <div class="header-container shadow-md     ">
-        <div class="bg-gradient-to-r from-cust-sec-clr   to-cust-pri-clr  p-0   text-sm text-white  h-3"> </div>
-        <header class="primary-header relative   px-4   
-         flex items-center justify-between lg:w-11/12     2xl:w-11/12 w-full   mx-auto">
 
-            <div class="px-2    ">
-                <a href="#">
-                    <img src="images/snp_full.svg" alt="Stocks & Profit Logo" class="main-logo">
-                    
-                </a>
-            </div>
-
-            <nav role="navigation" class="nav-tag relative       ">
-                
-                <ul id="primary-navigation" data-visible="false"  class="primary-nav transition-transform flex   
-                  shadow-md lg:shadow-none   gap-x-2 justify-center  ">
-                     
-                    <!-- LI start  -->
-                    <li class=" primary-nav-li  contain-drop-down  "  >
-                        
-                        <button  aria-haspopup="true"  aria-expanded="false"
-                        class="drop-down-button primary-nav__links transition"
-                         >
-                         <span class="primary-link__text   ">Market Analysis 
-                         </span>
-                         <span class="primary-link__icon   ">
-                            
-                             
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-                                <path fill="currentColor" class="primary-link__chevron transition" d="M10.47 19.47a.75.75 0 1 0 1.06 1.06l-1.06-1.06zM17 14l.53.53c.3-.3.3-.77 0-1.06L17 14zm-5.47-6.53a.75.75 0 1 0-1.06 1.06l1.06-1.06zm0 13.06l6-6-1.06-1.06-6 6 1.06 1.06zm6-7.06l-6-6-1.06 1.06 6 6 1.06-1.06z"></path></svg> 
-                         </span>
-                        
-                        </button>
-                           
-                          
-
-                         <div  aria-hidden="true" aria-label="Market Analysis Submenu"   aria-labelledby="marketanalysisdropdown"
-                         class=" dropdown  lg:absolute rounded-md shadow-md left-0 top-12  block bg-white   ">
-                            <div class="innerdropdown-div flex pb-3 shadow-md">
-                                
-                                <ul class="mt-4 w-60 ">
-                                    <li class=" innerdropdown__li  hover:bg-cust-lightest-grey " >
-                                        <a href="#" class=" group " >
-                                            <div class="div1 p-1 flex justify-between ">
-
-                                                <div class="divinner1 p-1 flex">   
-                                                    <!-- Link start -->
-                                                    <div class="divinnertext px-4  ">
-                                                        <span class="innerdropdown__spantitle  text-cust-logo-blue  text-lg  group-hover:text-black">
-                                                            Stock Market &raquo;
-                                                          </span>
-                                                          <span class="innerdropdown__spandescription text-sm text-cust-dark-grey">
-                                                            Find out Stocks Trends & Day Trading Ideas                                                              
-                                                          </span>
-                                                    </div>
-                                                    <!-- Link ends -->
-                                                </div>  
-                                            </div>
-                                        </a>
-
-                                    </li>
-
-                                    <li class=" innerdropdown__li  hover:bg-cust-lightest-grey   " >
-                                        <a href="#" class=" group " >
-                                            <div class="div1 p-1 flex justify-between">
-                                                <div class="divinner1 p-1 flex">
-                                                    <!-- Link start -->
-                                                    <div class="divinnertext px-4  ">
-                                                        <span class="innerdropdown__spantitle  text-cust-logo-blue  text-lg  group-hover:text-black">
-                                                            Forex/Currency Pairs &raquo;
-                                                          </span>
-                                                          <span class="innerdropdown__spandescription text-sm text-cust-dark-grey">
-                                                            Trading Currency Analysis & Forex Pairs
-                                                          </span>
-                                                    </div>
-                                                    <!-- Link ends -->                                              
-                                                </div>    
-
-                                                 
-                                            </div>
-                                        </a>
-                                        
-                                    </li>
-                                   
-
-                                    <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                                        <a href="#" class=" group " >
-                                            <div class="div1 p-1 flex justify-between">
-                                                <div class="divinner1 p-1 flex">
-                                                     
-                                                    <div class="divinnertext px-1  ">
-                                                            <!-- Link start -->
-                                                        <div class="divinnertext px-4  ">
-                                                            <span class="innerdropdown__spantitle text-cust-logo-blue text-lg  group-hover:text-black ">
-                                                                 Crypto Currency &raquo;
-                                                            </span>
-                                                            <span class="innerdropdown__spandescription text-sm text-cust-dark-grey">
-                                                                Analyze Crypto Pairs, Bitcoin, Etherium etc.
-                                                            </span>
-                                                        </div>
-                                                        <!-- Link ends -->  
-                                                    </div>
-                                                </div>    
-
-                                                 
-                                            </div>
-                                        </a>
-                                    </li>
-                                     
-                                    
-                                </ul>
-                                
-                                
-                            </div>     
-                                    
-                         </div>
-                    </li>
-
-                    <!-- LI Ends  -->
-                    
- <!-- LI 2nd start  -->
- <li class=" primary-nav-li  contain-drop-down  "  >
-                        
-    <button  aria-haspopup="true"  aria-expanded="false"
-    class="drop-down-button primary-nav__links transition"
-     >
-     <span class="primary-link__text   ">Stocks 
-     </span>
-     <span class="primary-link__icon   ">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-            <path fill="currentColor" class="primary-link__chevron transition" d="M10.47 19.47a.75.75 0 1 0 1.06 1.06l-1.06-1.06zM17 14l.53.53c.3-.3.3-.77 0-1.06L17 14zm-5.47-6.53a.75.75 0 1 0-1.06 1.06l1.06-1.06zm0 13.06l6-6-1.06-1.06-6 6 1.06 1.06zm6-7.06l-6-6-1.06 1.06 6 6 1.06-1.06z"></path></svg> 
-     </span>    
-    </button>
-       
-      
-
-     <div  aria-hidden="true" aria-label="Market Analysis Submenu"   aria-labelledby="stocksdropdown"
-     class=" dropdown  lg:absolute rounded-md shadow-md left-0 top-12  block bg-white   ">
-        <div class="innerdropdown-div flex pb-3 shadow-md">
-            
-            <ul class="mt-4 w-60 ">
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Intra Day Stocks Ideas
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                
-
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Stocks in Uptrend
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>               
-
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Strong Buy Stocks
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Bullish Stocks Ideas
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Stocks in Downtrend
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Bearish Stocks
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Short Sell Stocks
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Most Active Stocks
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Extreme Gainers / Losers                                            
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Sparks in Volume                                          
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Sparks in Momentum                                          
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                 
-                
-            </ul>
-            
-            
-            
-        </div>     
-                
-     </div>
-</li>
-
-<!-- LI 2nd Ends  -->
-
-<!-- LI 3rd start  -->
-<li class=" primary-nav-li  contain-drop-down  "  >
-                        
-    <button  aria-haspopup="true"  aria-expanded="false"
-    class="drop-down-button primary-nav__links transition"
-     >
-     <span class="primary-link__text   ">Strategies 
-        <span class="primary-link__pill    " >New</span>
-     </span>
-     <span class="primary-link__icon   ">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-            <path fill="currentColor" class="primary-link__chevron transition" d="M10.47 19.47a.75.75 0 1 0 1.06 1.06l-1.06-1.06zM17 14l.53.53c.3-.3.3-.77 0-1.06L17 14zm-5.47-6.53a.75.75 0 1 0-1.06 1.06l1.06-1.06zm0 13.06l6-6-1.06-1.06-6 6 1.06 1.06zm6-7.06l-6-6-1.06 1.06 6 6 1.06-1.06z"></path></svg> 
-     </span>    
-    </button>
-       
-      
-
-     <div  aria-hidden="true" aria-label="Market Analysis Submenu"   aria-labelledby="stocksdropdown"
-     class=" dropdown  lg:absolute rounded-md shadow-md left-0 top-12  block bg-white   ">
-        <div class="innerdropdown-div flex pb-3 shadow-md">
-            
-            <ul class="mt-4 w-60 ">
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Bollinger Band Scalping Strategy
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                
-
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Rsi EMA strategy
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>               
-
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Short Sell Hull MA Strategy
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                           Inside bar Strategy
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>                
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Fisher Transform Strategy
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Browse all Strategies
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                
-                 
-                
-            </ul>
-            
-            
-            
-        </div>     
-                
-     </div>
-</li>
-
-<!-- LI 3rd Ends  -->
-
-
-<!-- LI 4rth start  -->
-<li class=" primary-nav-li  contain-drop-down  "  >
-                        
-    <button  aria-haspopup="true"  aria-expanded="false"
-    class="drop-down-button primary-nav__links transition"
-     >
-     <span class="primary-link__text   ">Studies
-        <span class="bg-red-500 absolute  -right-1 top-1 rounded-full p-1" ></span>
-     </span>
-     <span class="primary-link__icon   ">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-            <path fill="currentColor" class="primary-link__chevron transition" d="M10.47 19.47a.75.75 0 1 0 1.06 1.06l-1.06-1.06zM17 14l.53.53c.3-.3.3-.77 0-1.06L17 14zm-5.47-6.53a.75.75 0 1 0-1.06 1.06l1.06-1.06zm0 13.06l6-6-1.06-1.06-6 6 1.06 1.06zm6-7.06l-6-6-1.06 1.06 6 6 1.06-1.06z"></path></svg> 
-     </span>    
-    </button>
-       
-      
-
-     <div  aria-hidden="true" aria-label="Market Analysis Submenu"   aria-labelledby="stocksdropdown"
-     class=" dropdown  lg:absolute rounded-md shadow-md left-0 top-12  block bg-white   ">
-        <div class="innerdropdown-div flex pb-3 shadow-md">
-            
-            <ul class="mt-4 w-60 ">
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Breakout Stocks
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                
-
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey text-lg  group-hover:text-black ">
-                                            Stocks Crossing 21MA
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>               
-
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey    group-hover:text-black ">
-                                            Super Trend Breakout
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey    group-hover:text-black ">
-                                            Oversold Stocks
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey    group-hover:text-black ">
-                                            BB Overbought
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                <li class="  innerdropdown__li  hover:bg-cust-lightest-grey    " >
-                    <a href="#" class=" group " >                        
-                                        <!-- Link start -->
-                                    <div class="divinnertext px-5 py-2  ">
-                                        <span class="innerdropdown__spantitle text-cust-darket-grey    group-hover:text-black ">
-                                            View All Studies
-                                        </span>                                        
-                                    </div>
-                                    <!-- Link ends -->  
-                    </a>
-                </li>
-                
-            </ul>
-            
-            
-            
-        </div>     
-                
-     </div>
-</li>
-
-<!-- LI 4th Ends  -->
-                     
-
-                   
-
-
-                     
-                     
-                    <li class=" primary-nav-li       ">
-                        <a href="" 
-                        class="primary-nav__links "
-                         >
-                         <span class="primary-link__text  ">Utilities</span>
-                        </a>
-                    </li>
-                    
-                     
-                      
-                </ul>
-            </nav>
-             
-            <div class="flex " >
-
-                    <button role="search" aria-haspopup="true" aria-label="Search" 
-                    class="toggle-search-bar   transition group p-2  px-4   rounded-full  text-cust-dark-grey flex items-center gap-x-2
-                     bg-cust-lightest-grey focus:outline-none focus:ring focus:ring-slate-200 hover:ring hover:ring-slate-200 " >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#cccccc"   class="bi bi-search svg-icon-search fill-cust-dark-grey md:fill-cust-light-grey group-hover:fill-cust-dark-grey" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                      </svg>
-                        <span class="text-cust-light-grey group-hover:text-cust-dark-grey hidden sm:block lg:hidden xl:block">Search</span>
-                        <span class="text-cust-light-grey group-hover:text-cust-dark-grey text-xs  hidden  md:block  lg:hidden xl:block" >eg.Tesla</span>
-                    </button>
-                   
-                 
-                     
-                    
-                <a href="#" class="button-link 
-                bg-white  text-cust-dark-grey 
-                hover:text-cust-dark-grey                 
-                hidden xl:block ">Login</a>
-
-                <a href="#" class="button-link 
-                 bg-cust-logo-green    text-white  
-                hover:bg-cust-pri-clr   active:bg-cust-logo-blue                 
-                hidden md:block
-                ">Join</a>
-                
-                 
-                <button 
-                aria-label="Menu"  
-                aria-controls="primary-navigation" 
-                aria-expanded="false"
-                 
-                class="hamburger-button hidden transition delay-350ms  mx-2  rounded-full p-3 bg-cust-lightest-grey
-                hover:bg-cust-lighter-grey
-                hover:shadow-md active:bg-cust-light-grey focus:outline-none focus:ring-1 focus:ring-cust-light-grey
-                lg:hidden 
-                "></button>
-
-            </div> 
-<!-- Search Bar Start -->
-<div class="search-bar   py-8 px-1 md:px-4 bg-cust-light-grey shadow-lg  w-full "  
-role="search"   aria-label="Search" 
-data-expanded="false" >
-
-    <form action="#" class=" flex justify-center">
-        <div class="flex   w-full items-center justify-center rounded-full  md:w-9/12 p-1  shadow-md bg-white space-x-1
-        focus:ring-1 ring-blue-100 ">
-            <button type="submit " class="rounded-full bg-cust-lighter-grey p-2 hover:bg-cust-light-grey" aria-label="perform-search">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28" fill="currentColor"><path d="M18.162 17.089a7.412 7.412 0 10-1.06 1.062l4.774 4.679a.75.75 0 101.05-1.071l-4.764-4.67zm-5.75 1.235a5.912 5.912 0 110-11.824 5.912 5.912 0 010 11.823z"></path></svg>
-            </button>
-            <input type="text" class="px-5 text-lg p-1 w-full outline-0
-            " name="search" id="search" placeholder="Search: eg. Tesla"/>
-            <input type="reset" class="hidden md:block bg-white p-3  hover:bg-cust-lighter-grey text-sm border-r " value="Clear" >
-                
-            
-            <button type="button" class="toggle-search-bar  rounded-full bg-cust-lighter-grey p-3  hover:bg-cust-light-grey" aria-label="close-search">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" width="17" height="17" fill="currentColor"><path d="m.58 1.42.82-.82 15 15-.82.82z"></path><path d="m.58 15.58 15-15 .82.82-15 15z"></path></svg>
-            </button>
+    <div class="header-container shadow-md">
+      <div
+        class="bg-gradient-to-r from-cust-sec-clr to-cust-pri-clr p-0 text-sm text-white h-3"
+      ></div>
+      <header
+        class="primary-header relative px-4 flex items-center justify-between lg:w-11/12 2xl:w-11/12 w-full mx-auto"
+      >
+        <div class="px-2">
+          <a href="#">
+            <img
+              src="images/snp_full.svg"
+              alt="Stocks & Profit Logo"
+              class="main-logo"
+            />
+          </a>
         </div>
-    </form>
-</div>
 
-<!-- Search Bar Ends-->
-        </header>  
-         
+        <nav role="navigation" class="nav-tag relative">
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-nav transition-transform flex shadow-md lg:shadow-none gap-x-2 justify-center"
+          >
+            <!-- LI start  -->
+            <li class="primary-nav-li contain-drop-down">
+              <button
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="drop-down-button primary-nav__links transition"
+              >
+                <span class="primary-link__text">Market Analysis </span>
+                <span class="primary-link__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="currentColor"
+                      class="primary-link__chevron transition"
+                      d="M10.47 19.47a.75.75 0 1 0 1.06 1.06l-1.06-1.06zM17 14l.53.53c.3-.3.3-.77 0-1.06L17 14zm-5.47-6.53a.75.75 0 1 0-1.06 1.06l1.06-1.06zm0 13.06l6-6-1.06-1.06-6 6 1.06 1.06zm6-7.06l-6-6-1.06 1.06 6 6 1.06-1.06z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                aria-hidden="true"
+                aria-label="Market Analysis Submenu"
+                aria-labelledby="marketanalysisdropdown"
+                class="dropdown lg:absolute rounded-md shadow-md left-0 top-12 block bg-white"
+              >
+                <div class="innerdropdown-div flex pb-3 shadow-md">
+                  <ul class="mt-4 w-60">
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <div class="div1 p-1 flex justify-between">
+                          <div class="divinner1 p-1 flex">
+                            <!-- Link start -->
+                            <div class="divinnertext px-4">
+                              <span
+                                class="innerdropdown__spantitle text-cust-logo-blue text-lg group-hover:text-black"
+                              >
+                                Stock Market &raquo;
+                              </span>
+                              <span
+                                class="innerdropdown__spandescription text-sm text-cust-dark-grey"
+                              >
+                                Find out Stocks Trends & Day Trading Ideas
+                              </span>
+                            </div>
+                            <!-- Link ends -->
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <div class="div1 p-1 flex justify-between">
+                          <div class="divinner1 p-1 flex">
+                            <!-- Link start -->
+                            <div class="divinnertext px-4">
+                              <span
+                                class="innerdropdown__spantitle text-cust-logo-blue text-lg group-hover:text-black"
+                              >
+                                Forex/Currency Pairs &raquo;
+                              </span>
+                              <span
+                                class="innerdropdown__spandescription text-sm text-cust-dark-grey"
+                              >
+                                Trading Currency Analysis & Forex Pairs
+                              </span>
+                            </div>
+                            <!-- Link ends -->
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <div class="div1 p-1 flex justify-between">
+                          <div class="divinner1 p-1 flex">
+                            <div class="divinnertext px-1">
+                              <!-- Link start -->
+                              <div class="divinnertext px-4">
+                                <span
+                                  class="innerdropdown__spantitle text-cust-logo-blue text-lg group-hover:text-black"
+                                >
+                                  Crypto Currency &raquo;
+                                </span>
+                                <span
+                                  class="innerdropdown__spandescription text-sm text-cust-dark-grey"
+                                >
+                                  Analyze Crypto Pairs, Bitcoin, Etherium etc.
+                                </span>
+                              </div>
+                              <!-- Link ends -->
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- LI Ends  -->
+
+            <!-- LI 2nd start  -->
+            <li class="primary-nav-li contain-drop-down">
+              <button
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="drop-down-button primary-nav__links transition"
+              >
+                <span class="primary-link__text">Stocks </span>
+                <span class="primary-link__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="currentColor"
+                      class="primary-link__chevron transition"
+                      d="M10.47 19.47a.75.75 0 1 0 1.06 1.06l-1.06-1.06zM17 14l.53.53c.3-.3.3-.77 0-1.06L17 14zm-5.47-6.53a.75.75 0 1 0-1.06 1.06l1.06-1.06zm0 13.06l6-6-1.06-1.06-6 6 1.06 1.06zm6-7.06l-6-6-1.06 1.06 6 6 1.06-1.06z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                aria-hidden="true"
+                aria-label="Market Analysis Submenu"
+                aria-labelledby="stocksdropdown"
+                class="dropdown lg:absolute rounded-md shadow-md left-0 top-12 block bg-white"
+              >
+                <div class="innerdropdown-div flex pb-3 shadow-md">
+                  <ul class="mt-4 w-60">
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Intra Day Stocks Ideas
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Stocks in Uptrend
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Strong Buy Stocks
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Bullish Stocks Ideas
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Stocks in Downtrend
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Bearish Stocks
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Short Sell Stocks
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Most Active Stocks
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Extreme Gainers / Losers
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Sparks in Volume
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Sparks in Momentum
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- LI 2nd Ends  -->
+
+            <!-- LI 3rd start  -->
+            <li class="primary-nav-li contain-drop-down">
+              <button
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="drop-down-button primary-nav__links transition"
+              >
+                <span class="primary-link__text"
+                  >Strategies
+                  <span class="primary-link__pill">New</span>
+                </span>
+                <span class="primary-link__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="currentColor"
+                      class="primary-link__chevron transition"
+                      d="M10.47 19.47a.75.75 0 1 0 1.06 1.06l-1.06-1.06zM17 14l.53.53c.3-.3.3-.77 0-1.06L17 14zm-5.47-6.53a.75.75 0 1 0-1.06 1.06l1.06-1.06zm0 13.06l6-6-1.06-1.06-6 6 1.06 1.06zm6-7.06l-6-6-1.06 1.06 6 6 1.06-1.06z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                aria-hidden="true"
+                aria-label="Market Analysis Submenu"
+                aria-labelledby="stocksdropdown"
+                class="dropdown lg:absolute rounded-md shadow-md left-0 top-12 block bg-white"
+              >
+                <div class="innerdropdown-div flex pb-3 shadow-md">
+                  <ul class="mt-4 w-60">
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Bollinger Band Scalping Strategy
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Rsi EMA strategy
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Short Sell Hull MA Strategy
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Inside bar Strategy
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Fisher Transform Strategy
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Browse all Strategies
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- LI 3rd Ends  -->
+
+            <!-- LI 4rth start  -->
+            <li class="primary-nav-li contain-drop-down">
+              <button
+                aria-haspopup="true"
+                aria-expanded="false"
+                class="drop-down-button primary-nav__links transition"
+              >
+                <span class="primary-link__text"
+                  >Studies
+                  <span
+                    class="bg-red-500 absolute -right-1 top-1 rounded-full p-1"
+                  ></span>
+                </span>
+                <span class="primary-link__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="currentColor"
+                      class="primary-link__chevron transition"
+                      d="M10.47 19.47a.75.75 0 1 0 1.06 1.06l-1.06-1.06zM17 14l.53.53c.3-.3.3-.77 0-1.06L17 14zm-5.47-6.53a.75.75 0 1 0-1.06 1.06l1.06-1.06zm0 13.06l6-6-1.06-1.06-6 6 1.06 1.06zm6-7.06l-6-6-1.06 1.06 6 6 1.06-1.06z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                aria-hidden="true"
+                aria-label="Market Analysis Submenu"
+                aria-labelledby="stocksdropdown"
+                class="dropdown lg:absolute rounded-md shadow-md left-0 top-12 block bg-white"
+              >
+                <div class="innerdropdown-div flex pb-3 shadow-md">
+                  <ul class="mt-4 w-60">
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Breakout Stocks
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey text-lg group-hover:text-black"
+                          >
+                            Stocks Crossing 21MA
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey group-hover:text-black"
+                          >
+                            Super Trend Breakout
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey group-hover:text-black"
+                          >
+                            Oversold Stocks
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey group-hover:text-black"
+                          >
+                            BB Overbought
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                    <li class="innerdropdown__li hover:bg-cust-lightest-grey">
+                      <a href="#" class="group">
+                        <!-- Link start -->
+                        <div class="divinnertext px-5 py-2">
+                          <span
+                            class="innerdropdown__spantitle text-cust-darket-grey group-hover:text-black"
+                          >
+                            View All Studies
+                          </span>
+                        </div>
+                        <!-- Link ends -->
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- LI 4th Ends  -->
+
+            <li class="primary-nav-li">
+              <a href="" class="primary-nav__links">
+                <span class="primary-link__text">Utilities</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex">
+          <button
+            role="search"
+            aria-haspopup="true"
+            aria-label="Search"
+            class="toggle-search-bar transition group p-2 px-4 rounded-full text-cust-dark-grey flex items-center gap-x-2 bg-cust-lightest-grey focus:outline-none focus:ring focus:ring-slate-200 hover:ring hover:ring-slate-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#cccccc"
+              class="bi bi-search svg-icon-search fill-cust-dark-grey md:fill-cust-light-grey group-hover:fill-cust-dark-grey"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+            <span
+              class="text-cust-light-grey group-hover:text-cust-dark-grey hidden sm:block lg:hidden xl:block"
+              >Search</span
+            >
+            <span
+              class="text-cust-light-grey group-hover:text-cust-dark-grey text-xs hidden md:block lg:hidden xl:block"
+              >eg.Tesla</span
+            >
+          </button>
+
+          <a
+            href="#"
+            class="button-link bg-white text-cust-dark-grey hover:text-cust-dark-grey hidden xl:block"
+            >Login</a
+          >
+
+          <a
+            href="#"
+            class="button-link bg-cust-logo-green text-white hover:bg-cust-pri-clr active:bg-cust-logo-blue hidden md:block"
+            >Join</a
+          >
+
+          <button
+            aria-label="Menu"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+            class="hamburger-button hidden transition delay-350ms mx-2 rounded-full p-3 bg-cust-lightest-grey hover:bg-cust-lighter-grey hover:shadow-md active:bg-cust-light-grey focus:outline-none focus:ring-1 focus:ring-cust-light-grey lg:hidden"
+          ></button>
+        </div>
+        <!-- Search Bar Start -->
+        <div
+          class="search-bar py-8 px-1 md:px-4 bg-cust-light-grey shadow-lg w-full"
+          role="search"
+          aria-label="Search"
+          data-expanded="false"
+        >
+          <form action="#" class="flex justify-center">
+            <div
+              class="flex w-full items-center justify-center rounded-full md:w-9/12 p-1 shadow-md bg-white space-x-1 focus:ring-1 ring-blue-100"
+            >
+              <button
+                type="submit "
+                class="rounded-full bg-cust-lighter-grey p-2 hover:bg-cust-light-grey"
+                aria-label="perform-search"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 28 28"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18.162 17.089a7.412 7.412 0 10-1.06 1.062l4.774 4.679a.75.75 0 101.05-1.071l-4.764-4.67zm-5.75 1.235a5.912 5.912 0 110-11.824 5.912 5.912 0 010 11.823z"
+                  ></path>
+                </svg>
+              </button>
+              <input
+                type="text"
+                class="px-5 text-lg p-1 w-full outline-0"
+                name="search"
+                id="search"
+                placeholder="Search: eg. Tesla"
+              />
+              <input
+                type="reset"
+                class="hidden md:block bg-white p-3 hover:bg-cust-lighter-grey text-sm border-r"
+                value="Clear"
+              />
+
+              <button
+                type="button"
+                class="toggle-search-bar rounded-full bg-cust-lighter-grey p-3 hover:bg-cust-light-grey"
+                aria-label="close-search"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 17 17"
+                  width="17"
+                  height="17"
+                  fill="currentColor"
+                >
+                  <path d="m.58 1.42.82-.82 15 15-.82.82z"></path>
+                  <path d="m.58 15.58 15-15 .82.82-15 15z"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Search Bar Ends-->
+      </header>
     </div>
 
     <!-- part 1 header ends -->
-<!-- 
+    <!-- 
 <div class="relative heroimage -z-10 p-5 hidden">
     
 </div> -->
 
+    <!-- ##### Body section ##### -->
 
+    <!-- below is main body Start div -->
+    <div class="relative">
+      <div
+        class="ticker h-[62px] md:h-[40px] border-b border-dotted border-cust-light-grey"
+      >
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget ticker-widget"></div>
+          <div class="tradingview-widget-copyright">
+            <a
+              href="https://in.tradingview.com/markets/?aff_id=24657"
+              rel="noopener"
+              target="_blank"
+              class="text-mute flex justify-end p-0 m-0"
+            >
+              <span class="text-cust-dark-grey p-0 m-0 leading-3"
+                >Markets by TradingView</span
+              ></a
+            >
+          </div>
 
+          <script language="javascript">
+            document.addEventListener("DOMContentLoaded", (event) => {
+              let headticker = document.querySelector(".ticker-widget");
+              let loadJS = function (src) {
+                let jsLink = document.createElement("script");
+                jsLink.onload = function () {
+                  console.log("javascript file loaded");
+                };
+                jsLink.onerror = function () {
+                  console.log("javascript file Error in loading");
+                };
 
-<!-- ##### Body section ##### -->
-
-<!-- below is main body Start div -->
-<div class="relative    ">
-
-<div class="ticker h-[62px] md:h-[40px]  border-b border-dotted border-cust-light-grey  ">
-    <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container    ">
-    <div class="tradingview-widget-container__widget ticker-widget"></div>
-    <div class="tradingview-widget-copyright   ">
-        <a href="https://in.tradingview.com/markets/?aff_id=24657" rel="noopener" target="_blank" class=" text-mute flex justify-end p-0 m-0  ">
-            <span class=" text-cust-dark-grey   p-0 m-0 leading-3">Markets by TradingView</span></a> 
-        </div>
-
-        <script  language="javascript" >
-            document.addEventListener('DOMContentLoaded', (event) => {
-            
-                let headticker = document.querySelector(".ticker-widget");    
-                let loadJS = function(src) {
-                  let jsLink = document.createElement("script");
-                  jsLink.onload = function() {              
-                      console.log("javascript file loaded");    
-                    };        
-                  jsLink.onerror = function() {              
-                      console.log("javascript file Error in loading");
-                    };
-
-                  
-                    jsLink.async; 
-                    jsLink.defer; 
-                    jsLink.type = "application/javascript";  
-                    jsLink.text =`{
+                jsLink.async;
+                jsLink.defer;
+                jsLink.type = "application/javascript";
+                jsLink.text = `{
     "symbols": [
       {
         "proName": "FOREXCOM:SPXUSD",
@@ -658,79 +770,88 @@ data-expanded="false" >
     "isTransparent": true,
     "displayMode": "adaptive",
     "locale": "us"
-  }`  ;
-            
-                  jsLink.src = src;      
-                  jsLink.crossorigin = "anonymous";      
-                  headticker.appendChild(jsLink);	      
-                };
-                console.log("javascript file updated");
-                      window.setTimeout(function(){
-                          //hometickerwidget
-                          loadJS("https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"); // google auto ads
-                 
-                      },4000); 
-                });
-            </script>
+  }`;
 
-    
-  </div>
-  <!-- TradingView Widget END -->
-</div>
+                jsLink.src = src;
+                jsLink.crossorigin = "anonymous";
+                headticker.appendChild(jsLink);
+              };
+              console.log("javascript file updated");
+              window.setTimeout(function () {
+                //hometickerwidget
+                loadJS(
+                  "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+                ); // google auto ads
+              }, 4000);
+            });
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+      </div>
 
-
-
-<section>
-    <div class="relative block md:flex gap-x-5 mx-auto md:w-11/12  2xl:w-11/12 w-full  p-2 md:p-0   ">
-        <div class="relative flex-1   mt-4   px-2 md:px-0  ">
+      <section>
+        <div
+          class="relative block md:flex gap-x-5 mx-auto md:w-11/12 2xl:w-11/12 w-full p-2 md:p-0"
+        >
+          <div class="relative flex-1 mt-4 px-2 md:px-0">
             <!-- Hero -->
-            <div class="relative block xl:flex md:gap-x-5 mx-auto  w-full  p-2 md:p-0   ">
-                <div class="relative flex-1   pb-2    px-2 md:px-0  ">
-                   
-                   <h1 class="text-4xl lg:text-6xl font-bold text-cust-darker-grey ">
-                    Now, every opportunity <br>
-                    in Stock Market <br>
-                    equals to <span class="text-cust-sec-clr text-5xl lg:text-7xl" >Profit</span> </h1> 
-                    <h2 class="text-2xl mt-3">
-                        Market Analysis should not take ages. We bring you Revolutionary Modern Analysis that gives you power and strength in your trade.
-                    </h2>
-                 
-                </div>        
-                <div class="relative  flex-none self-start   min-w-[300px] max-w-[310px]    md:max-w-[320px] 
-                
-                px-2 md:px-0 border rounded-md">
-                    <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container h-[210px]">
-    <div class="tradingview-widget-container__widget chart-widget">
-        
-    </div>
-    <div class="tradingview-widget-copyright">
-        
-        <a href="https://in.tradingview.com/symbols/CME_MINI-ES1!/?aff_id=24657" rel="noopener" target="_blank" class="text-mute flex justify-end">
-            <span class="text-cust-dark-grey ">Stock Market Quotes by TradingView</span></a> 
+            <div
+              class="relative block xl:flex md:gap-x-5 mx-auto w-full p-2 md:p-0"
+            >
+              <div class="relative flex-1 pb-2 px-2 md:px-0">
+                <h1
+                  class="text-4xl lg:text-6xl font-bold text-cust-darker-grey"
+                >
+                  Now, every opportunity <br />
+                  in Stock Market <br />
+                  equals to
+                  <span class="text-cust-sec-clr text-5xl lg:text-7xl"
+                    >Profit</span
+                  >
+                </h1>
+                <h2 class="text-2xl mt-3">
+                  Market Analysis should not take ages. We bring you
+                  Revolutionary Modern Analysis that gives you power and
+                  strength in your trade.
+                </h2>
+              </div>
+              <div
+                class="relative flex-none self-start min-w-[300px] max-w-[310px] md:max-w-[320px] px-2 md:px-0 border rounded-md"
+              >
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container h-[210px]">
+                  <div
+                    class="tradingview-widget-container__widget chart-widget"
+                  ></div>
+                  <div class="tradingview-widget-copyright">
+                    <a
+                      href="https://in.tradingview.com/symbols/CME_MINI-ES1!/?aff_id=24657"
+                      rel="noopener"
+                      target="_blank"
+                      class="text-mute flex justify-end"
+                    >
+                      <span class="text-cust-dark-grey"
+                        >Stock Market Quotes by TradingView</span
+                      ></a
+                    >
+                  </div>
 
+                  <script language="javascript">
+                    document.addEventListener("DOMContentLoaded", (event) => {
+                      let headticker = document.querySelector(".chart-widget");
+                      let loadJS = function (src) {
+                        let jsLink = document.createElement("script");
+                        jsLink.onload = function () {
+                          console.log("javascript file loaded");
+                        };
+                        jsLink.onerror = function () {
+                          console.log("javascript file Error in loading");
+                        };
 
-
-    </div>
-    
-    <script  language="javascript" >
-        document.addEventListener('DOMContentLoaded', (event) => {
-        
-            let headticker = document.querySelector(".chart-widget");    
-            let loadJS = function(src) {
-              let jsLink = document.createElement("script");
-              jsLink.onload = function() {              
-                  console.log("javascript file loaded");    
-                  
-                };        
-              jsLink.onerror = function() {              
-                  console.log("javascript file Error in loading");
-                };
-        
-              jsLink.async; 
-              jsLink.defer; 
-              jsLink.type = "application/javascript";  
-              jsLink.text =`{
+                        jsLink.async;
+                        jsLink.defer;
+                        jsLink.type = "application/javascript";
+                        jsLink.text = `{
           "symbol": "CME_MINI:ES1!",
           "width": "300",
           "height": "200",
@@ -744,1191 +865,1309 @@ data-expanded="false" >
           "autosize": true,
           "largeChartUrl": ""
         }`;
-              jsLink.src = src;      
-              jsLink.crossorigin = "anonymous";      
-              
-              headticker.appendChild(jsLink);	      
-            };
-            console.log("javascript file updated");
-            
-                  window.setTimeout(function(){
-                      //hometickerwidget
-                      loadJS("https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js");  
-             
-                  },3000); 
-            });
-            
-        </script>
-    
-          
-  </div>
-  <!-- TradingView Widget END -->
-                </div>        
+                        jsLink.src = src;
+                        jsLink.crossorigin = "anonymous";
+
+                        headticker.appendChild(jsLink);
+                      };
+                      console.log("javascript file updated");
+
+                      window.setTimeout(function () {
+                        //hometickerwidget
+                        loadJS(
+                          "https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                        );
+                      }, 3000);
+                    });
+                  </script>
+                </div>
+                <!-- TradingView Widget END -->
+              </div>
             </div>
-<!-- Hero Ends -->
+            <!-- Hero Ends -->
 
+            <!-- Tags Start  -->
+            <div class="home-tags mt-1 flex flex-wrap">
+              <a href="#" class="tag-light-grey"> Intraday Stock Picks </a>
+              <a href="#" class="tag-dark-grey"> Stocks in Uptrend </a>
 
-<!-- Tags Start  -->
-<div class="home-tags mt-1 flex flex-wrap">
-    <a href="#" class="tag-light-grey 
-     ">
-        Intraday Stock Picks
-    </a>
-    <a href="#" class="tag-dark-grey">
-        Stocks in Uptrend
-    </a>
-     
-    <a href="#" class="tag-mid-grey">
-        Intraday Stock Picks
-    </a>
-     
-    
-     
-     
-</div>
-<!-- Tags Ends  -->
+              <a href="#" class="tag-mid-grey"> Intraday Stock Picks </a>
+            </div>
+            <!-- Tags Ends  -->
 
-
-<article>
-            <div class=" block p-3">
-                <h1 class="green-title-2xl font-bold ">
+            <article>
+              <div class="block p-3">
+                <h1 class="green-title-2xl font-bold">
                   Expore Stock Market Stories
                 </h1>
                 <p class="text-justify indent-5 leading-relaxed">
-                We at StockLineDirect.com provides Free Stock Tips for Indian Stock Market NSE BSE Nifty and Sensex. Free Intraday Stock Tips on almost every stocks of India. We daily update Stock Tips from major Technical Analyst and Technical Analysis Companies of India. We also provide Stock Tips & Intraday Tips and daily Stock Trends on any scrip of Indian Stock Market, Get Stock Tips along with Realtime Stock Prices, Stock Trend & Stock charts, Find out bullish stocks, bearish stocks, Stock tips for Stocks to Buy & Sell, Get Stock support and resistance level. Stock tips on Mobile service.
-            </p>
+                  We at StockLineDirect.com provides Free Stock Tips for Indian
+                  Stock Market NSE BSE Nifty and Sensex. Free Intraday Stock
+                  Tips on almost every stocks of India. We daily update Stock
+                  Tips from major Technical Analyst and Technical Analysis
+                  Companies of India. We also provide Stock Tips & Intraday Tips
+                  and daily Stock Trends on any scrip of Indian Stock Market,
+                  Get Stock Tips along with Realtime Stock Prices, Stock Trend &
+                  Stock charts, Find out bullish stocks, bearish stocks, Stock
+                  tips for Stocks to Buy & Sell, Get Stock support and
+                  resistance level. Stock tips on Mobile service.
+                </p>
+              </div>
+            </article>
 
-            </div>    
-            
-</article>  
+            <article>
+              <div class="container-rounded-white">
+                <h2 class="green-title-3xl">Stock Scroller</h2>
+                <div class="block sm:grid gap-2 px-2 md:px-4 my-2">
+                  <!-- Table responsive start  -->
+                  <div
+                    class="block w-full overflow-x-auto overflow-y-hidden pt-1 m-0"
+                  >
+                    <table class="table-space-none">
+                      <tr>
+                        <!-- Block Start -->
+                        <td class="pr-2 relative">
+                          <a href="#" class="mr-1">
+                            <div class="trend-ticker-box">
+                              <div class="">
+                                <div
+                                  class="trend-ticker-box__symbol bg-green-700"
+                                >
+                                  ASHOKLEY
+                                </div>
+                                <div class="trend-ticker-box__name">
+                                  India Bulls Housing Finance Ltd.
+                                </div>
+                              </div>
+                              <div class="mt-4 flex justify-between">
+                                <div class="trend-ticker-box__price">
+                                  $ 161.5
+                                </div>
+                                <div class="">
+                                  <span
+                                    class="trend-ticker-box__change text-green-800"
+                                    >^0.360%</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="mt-2">
+                                <span
+                                  class="trend-ticker-box__trend bg-green-100"
+                                  >^Strong Uptrend</span
+                                >
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <!-- Block ends -->
 
+                        <!-- Block Start -->
+                        <td class="pr-2">
+                          <a href="#" class="mr-1">
+                            <div class="trend-ticker-box">
+                              <div class="">
+                                <div
+                                  class="trend-ticker-box__symbol bg-green-700"
+                                >
+                                  ASHOKLEY
+                                </div>
+                                <div class="trend-ticker-box__name">
+                                  India Bulls Housing Finance Ltd.
+                                </div>
+                              </div>
+                              <div class="mt-4 flex justify-between">
+                                <div class="trend-ticker-box__price">
+                                  $ 161.5
+                                </div>
+                                <div class="">
+                                  <span
+                                    class="trend-ticker-box__change text-green-800"
+                                    >^0.360%</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="mt-2">
+                                <span
+                                  class="trend-ticker-box__trend bg-green-100"
+                                  >^Strong Uptrend</span
+                                >
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <!-- Block ends -->
+                        <!-- Block Start -->
+                        <td class="pr-2">
+                          <a href="#" class="mr-1">
+                            <div class="trend-ticker-box">
+                              <div class="">
+                                <div
+                                  class="trend-ticker-box__symbol bg-green-700"
+                                >
+                                  ASHOKLEY
+                                </div>
+                                <div class="trend-ticker-box__name">
+                                  India Bulls Housing Finance Ltd.
+                                </div>
+                              </div>
+                              <div class="mt-4 flex justify-between">
+                                <div class="trend-ticker-box__price">
+                                  $ 161.5
+                                </div>
+                                <div class="">
+                                  <span
+                                    class="trend-ticker-box__change text-green-800"
+                                    >^0.360%</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="mt-2">
+                                <span
+                                  class="trend-ticker-box__trend bg-green-100"
+                                  >^Strong Uptrend</span
+                                >
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <!-- Block ends -->
 
-<article>
-    <div class="container-rounded-white">
-        <h2 class="green-title-3xl  ">
-            Stock Scroller
-        </h2>
-    <div class="block sm:grid  gap-2 px-2 md:px-4 my-2     ">
-        <!-- Table responsive start  -->
-        <div class="block w-full overflow-x-auto overflow-y-hidden pt-1 m-0   ">
-            <table class="table-space-none  "  >
-               <tr>
-                  
-           <!-- Block Start -->
-                   <td class="pr-2 relative ">
-                           <a href="#" class="mr-1 ">
-                               <div class="  trend-ticker-box ">
-                                   <div class="">
-                                       <div class="trend-ticker-box__symbol  bg-green-700  ">ASHOKLEY</div>
-                                       <div class="trend-ticker-box__name ">India Bulls Housing Finance Ltd.</div>
-                                   </div>
-                                   <div class="mt-4 flex justify-between">
-                                       <div class="trend-ticker-box__price ">$ 161.5</div>
-                                       <div class="">
-                                           <span class="trend-ticker-box__change text-green-800">^0.360%</span>
-                                       </div>                                            
-                                   </div>
-                                   <div class=" mt-2">
-                                       <span class="trend-ticker-box__trend bg-green-100">^Strong Uptrend</span>
-                                   </div>
-                               </div>
-                           </a>
-                   </td>
-           <!-- Block ends -->
+                        <!-- Block Start -->
+                        <td class="pr-2">
+                          <a href="#" class="mr-1">
+                            <div class="trend-ticker-box">
+                              <div class="">
+                                <div
+                                  class="trend-ticker-box__symbol bg-green-700"
+                                >
+                                  ASHOKLEY
+                                </div>
+                                <div class="trend-ticker-box__name">
+                                  India Bulls Housing Finance Ltd.
+                                </div>
+                              </div>
+                              <div class="mt-4 flex justify-between">
+                                <div class="trend-ticker-box__price">
+                                  $ 161.5
+                                </div>
+                                <div class="">
+                                  <span
+                                    class="trend-ticker-box__change text-green-800"
+                                    >^0.360%</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="mt-2">
+                                <span
+                                  class="trend-ticker-box__trend bg-green-100"
+                                  >^Strong Uptrend</span
+                                >
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <!-- Block ends -->
+                        <!-- Block Start -->
+                        <td class="pr-2">
+                          <a href="#" class="mr-1">
+                            <div class="trend-ticker-box">
+                              <div class="">
+                                <div
+                                  class="trend-ticker-box__symbol bg-green-700"
+                                >
+                                  ASHOKLEY
+                                </div>
+                                <div class="trend-ticker-box__name">
+                                  India Bulls Housing Finance Ltd.
+                                </div>
+                              </div>
+                              <div class="mt-4 flex justify-between">
+                                <div class="trend-ticker-box__price">
+                                  $ 161.5
+                                </div>
+                                <div class="">
+                                  <span
+                                    class="trend-ticker-box__change text-green-800"
+                                    >^0.360%</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="mt-2">
+                                <span
+                                  class="trend-ticker-box__trend bg-green-100"
+                                  >^Strong Uptrend</span
+                                >
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <!-- Block ends -->
+                        <!-- Block Start -->
+                        <td class="pr-2">
+                          <a href="#" class="mr-1">
+                            <div class="trend-ticker-box">
+                              <div class="">
+                                <div
+                                  class="trend-ticker-box__symbol bg-green-700"
+                                >
+                                  ASHOKLEY
+                                </div>
+                                <div class="trend-ticker-box__name">
+                                  India Bulls Housing Finance Ltd.
+                                </div>
+                              </div>
+                              <div class="mt-4 flex justify-between">
+                                <div class="trend-ticker-box__price">
+                                  $ 161.5
+                                </div>
+                                <div class="">
+                                  <span
+                                    class="trend-ticker-box__change text-green-800"
+                                    >^0.360%</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="mt-2">
+                                <span
+                                  class="trend-ticker-box__trend bg-green-100"
+                                  >^Strong Uptrend</span
+                                >
+                              </div>
+                            </div>
+                          </a>
+                        </td>
+                        <!-- Block ends -->
+                      </tr>
+                    </table>
+                  </div>
+                  <!-- Table responsive ends  -->
+                </div>
+              </div>
+            </article>
 
-            <!-- Block Start -->
-            <td class="pr-2">
-                <a href="#" class="mr-1">
-                    <div class="  trend-ticker-box ">
+            <article>
+              <div class="container-rounded-white">
+                <h2 class="green-title-3xl">
+                  Top Headlines Today: Stock Market News
+                </h2>
+
+                <div
+                  class="block sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-2 md:px-4 my-2"
+                >
+                  <!-- divblock start -->
+                  <div class="relative w-full leading-relaxed mb-4 mr-3">
+                    <a
+                      href="#"
+                      class="group block rounded-md px-2 py-3 border-b-2 sm:border-b-0 border-dotted border-cust-lighter-grey border-r-none sm:border-r-2 border-dotted border-cust-lighter-grey hover:bg-cust-lightest-grey hover:shadow-md hover:border-transparent"
+                    >
+                      <div class="flex md:block align-center">
+                        <div class="py-1 md:py-3">
+                          <img
+                            src="images/BANKNIFTY1!_2022-08-15_00-42-06.png"
+                            alt=""
+                            class="h-[3rem] md:h-[4rem] aspect-video rounded-md"
+                          />
+                        </div>
+                        <h1
+                          class="text-xl font-bold ml-2 md:ml-0 text-cust-darker-grey"
+                        >
+                          Dow Cracks 500 points Nasdaq slips as well
+                        </h1>
+                      </div>
+                      <p class="text-sm text-cust-dark-grey">
+                        Lorem ipsum dolor sit Lorem ipsum dolor sit amet. Watch
+                        for breakout and close.
+                      </p>
+                    </a>
+                  </div>
+                  <!-- divblock ends -->
+                </div>
+              </div>
+            </article>
+
+            <article>
+              <div class="container-rounded-white">
+                <h2 class="green-title-3xl">Must Reads Important Articles</h2>
+
+                <div
+                  class="block sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-2 md:px-4 my-2"
+                >
+                  <!-- divblock start -->
+                  <div class="relative w-full leading-relaxed mb-4 mr-3">
+                    <a
+                      href="#"
+                      class="group block rounded-md px-2 py-3 border-b-2 sm:border-b-0 border-dotted border-cust-lighter-grey border-r-none sm:border-r-2 border-dotted border-cust-lighter-grey hover:bg-cust-lightest-grey hover:shadow-md hover:border-transparent"
+                    >
+                      <div class="py-3">
+                        <img
+                          src="images/quino-al-XAlKHW9ierw-unsplash.jpg"
+                          alt=""
+                          class="w-full aspect-video rounded-md"
+                        />
+                      </div>
+                      <span
+                        class="p-0.5 px-1 bg-cust-lighter-grey rounded-md text-sm group-hover:bg-green-300"
+                        >ESMIN!</span
+                      >
+                      <h1 class="text-xl font-bold text-cust-darker-grey">
+                        ESMINI Medium Term Symmetrical Traiangle
+                      </h1>
+                      <h2 class="text-xl text-cust-dark-grey">
+                        Technical Analysis powered
+                      </h2>
+                      <p class="text-sm text-cust-dark-grey">
+                        Lorem ipsum dolor sit Lorem ipsum dolor sit amet. Watch
+                        for breakout and close. <br />
+                        <span
+                          class="p-0.5 px-1 rounded-md text-sm group-hover:text-cust-sec-clr group-hover:bg-white group-hover:font-semi-bold"
+                          >More>></span
+                        >
+                      </p>
+                    </a>
+                  </div>
+                  <!-- divblock ends -->
+                </div>
+              </div>
+            </article>
+
+            <article>
+              <div class="container-rounded-white">
+                <div
+                  class="block sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2"
+                >
+                  <!-- divblock start -->
+                  <div class="news-snippet">
+                    <a href="#" class="news-snippet__link">
+                      Dow Cracks 500 points Nasdaq slips as well</a
+                    >
+                  </div>
+                  <!-- divblock ends -->
+                  <!-- divblock start -->
+                  <div class="news-snippet">
+                    <a href="#" class="news-snippet__link">
+                      Dow Cracks 500 points Nasdaq slips as well</a
+                    >
+                  </div>
+                  <!-- divblock ends -->
+                  <!-- divblock start -->
+                  <div class="news-snippet">
+                    <a href="#" class="news-snippet__link">
+                      Dow Cracks 500 points Nasdaq slips as well</a
+                    >
+                  </div>
+                  <!-- divblock ends -->
+                  <!-- divblock start -->
+                  <div class="news-snippet">
+                    <a href="#" class="news-snippet__link">
+                      Dow Cracks 500 points Nasdaq slips as well</a
+                    >
+                  </div>
+                  <!-- divblock ends -->
+                  <!-- divblock start -->
+                  <div class="news-snippet">
+                    <a href="#" class="news-snippet__link">
+                      Dow Cracks 500 points Nasdaq slips as well</a
+                    >
+                  </div>
+                  <!-- divblock ends -->
+                  <!-- divblock start -->
+                  <div class="news-snippet">
+                    <a href="#" class="news-snippet__link">
+                      Dow Cracks 500 points Nasdaq slips as well</a
+                    >
+                  </div>
+                  <!-- divblock ends -->
+                </div>
+              </div>
+            </article>
+
+            <article>
+              <div class="container-rounded-white">
+                <div
+                  class="block sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2"
+                >
+                  <!-- divblock start -->
+                  <div
+                    class="mr-3 md:border-r border-dotted border-cust-dark-grey w-full"
+                  >
+                    <a
+                      href="#"
+                      class="group flex justify-between p-2 hover:bg-cust-lightest-grey"
+                    >
+                      <h2
+                        class="text-cust-darker-grey font-bold group-hover:underline group-hover:decoration-cust-sec-clr leading-5"
+                      >
+                        Dow Cracks 500 points Nasdaq slips as well
+                      </h2>
+
+                      <img
+                        src="images/ES1!_2022-09-12_21-34-23.png"
+                        alt=""
+                        class="aspect-square w-[60px] h-[60px] m-2 rounded-md"
+                      />
+                    </a>
+                  </div>
+                  <!-- divblock ends -->
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- Side panel start  -->
+          <div class="side-panel">
+            <aside>
+              <!-- First Block -->
+              <div class="block trending-stocks-today px-0 md:px-2 py-4">
+                <div class="side-panel__green-title">Trending Stocks Today</div>
+
+                <a href="" class="side-panel__links">
+                  <span class="side-panel__symbol">TSLA</span> Tesla Inc
+                </a>
+                <a href="" class="side-panel__links">
+                  <span class="side-panel__symbol">AAPL</span> Alphabet Inc
+                </a>
+                <a href="" class="side-panel__links">
+                  <span class="side-panel__symbol">MSFT</span> Microsoft Inc
+                </a>
+              </div>
+              <!-- First ends -->
+              <!-- Second Block Start -->
+              <div class="block top-picks px-0 md:px-2 py-4">
+                <div class="side-panel__normal-title">Top Picks</div>
+
+                <a href="" class="side-panel__links">
+                  <span class="side-panel__symbol">TMA</span> Meta Inc
+                </a>
+                <a href="" class="side-panel__links">
+                  <span class="side-panel__symbol">AAPL</span> Alphabet Inc
+                </a>
+                <a href="" class="side-panel__links">
+                  <span class="side-panel__symbol">MSFT</span> Microsoft Inc
+                </a>
+                <a href="" class="side-panel__links">
+                  <span class="side-panel__symbol">TMA</span> Meta Inc
+                </a>
+                <a href="" class="side-panel__links">
+                  <span class="side-panel__symbol">AAPL</span> Facebook Inc
+                </a>
+                <a href="" class="side-panel__links">
+                  <span class="side-panel__symbol">MSFT</span> Alibaba Inc
+                </a>
+              </div>
+              <!-- Second Block ends -->
+
+              <!-- Third Block -->
+              <div class="block top-picks px-0 md:px-2 py-4">
+                <div class="border p-1 border rounded-md divide-y">
+                  <div class="side-panel__green-title">Webinars</div>
+
+                  <a href="#" class="side-panel-avatar-links">
+                    <img
+                      src="images/FIRePxDXIAQo8hj.jpg"
+                      alt=""
+                      class="avatar-img-10"
+                    />
+                    &bull; Learn How to Trade!
+                  </a>
+                  <a href="#" class="side-panel-avatar-links">
+                    <img src="images/duck.webp" alt="" class="avatar-img-10" />
+                    &bull; Learn How to Trade!
+                  </a>
+                  <a href="#" class="side-panel-avatar-links">
+                    &bull; New Indicator
+                  </a>
+                  <a href="#" class="side-panel-avatar-links">
+                    &bull; Find out VIX of any stocks
+                  </a>
+                </div>
+              </div>
+              <!-- Third Block ends -->
+              <!-- Forth Block -->
+              <div class="block top-picks px-0 md:px-2 py-4">
+                <div class="border p-1 border rounded-md">
+                  <div class="side-panel__green-title">Market Movers</div>
+                  <table
+                    class="table-auto rightpanel-table border-collapse border-spacing-0 text-sm border w-full"
+                    cellpadding="5"
+                  >
+                    <thead>
+                      <tr class="border-b border-cust-lighter-grey">
+                        <th class="text-left">Name</th>
+                        <th class="text-left">LTP</th>
+                        <th class="text-left">Chg%</th>
+                        <th class="text-left">Trend</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class=" ">
+                        <td>
+                          <a href="" class="table-link-bold"> NIFTY </a>
+                        </td>
+                        <td class="text-right">
+                          <a href="" class="table-link"> 18000 </a>
+                        </td>
+                        <td class="text-center">
+                          <a href="" class="table-link-green"> 1% </a>
+                        </td>
+                        <td class=" ">
+                          <a href="" class="table-link-green"> uptrend </a>
+                        </td>
+                      </tr>
+                      <tr class=" ">
+                        <td>
+                          <a href="" class="table-link-bold"> BankNifty </a>
+                        </td>
+                        <td class="text-right">
+                          <a href="" class="table-link"> 18000 </a>
+                        </td>
+                        <td class="text-center">
+                          <a href="" class="table-link-red"> 1% </a>
+                        </td>
+                        <td class=" ">
+                          <a href="" class="table-link-red"> Downtrend </a>
+                        </td>
+                      </tr>
+                      <tr class=" ">
+                        <td>
+                          <a href="" class="py-2 hover:underline font-semibold">
+                            NIFTY
+                          </a>
+                        </td>
+                        <td class="text-right">
+                          <a href="" class="py-2 hover:underline"> 18000 </a>
+                        </td>
+                        <td class="text-center">
+                          <a
+                            href=""
+                            class="py-2 text-green-700 hover:underline"
+                          >
+                            1%
+                          </a>
+                        </td>
+                        <td class="text-green-700">
+                          <a href="" class="py-2 hover:underline"> uptrend </a>
+                        </td>
+                      </tr>
+                      <tr class=" ">
+                        <td>
+                          <a href="" class="py-2 hover:underline font-semibold">
+                            NIFTY
+                          </a>
+                        </td>
+                        <td class="text-right">
+                          <a href="" class="py-2 hover:underline"> 18000 </a>
+                        </td>
+                        <td class="text-center">
+                          <a
+                            href=""
+                            class="py-2 text-green-700 hover:underline"
+                          >
+                            1%
+                          </a>
+                        </td>
+                        <td class="text-green-700">
+                          <a href="" class="py-2 hover:underline"> uptrend </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- Forth Block ends -->
+              <!-- Fifth Block Start -->
+              <div class="block top-picks px-0 md:px-2 py-4">
+                <div class="border p-1 border rounded-md divide-y">
+                  <div class="side-panel__green-title">
+                    Most Active Stocks Today
+                  </div>
+                  <!-- block start -->
+                  <div class="most-active-inside leading-4">
+                    <div class="pl-2 w-[20ch]">
+                      <a href="" class="link-dark-grey"
+                        >Hindustan Unnilever Ltd.</a
+                      >
+                    </div>
+                    <div class="pr-2 text-right">
+                      <span class="text-sm font-semibold text-cust-dark-grey">
+                        567.38
+                      </span>
+                      <br />
+                      <span class="text-sm text-green-600">
+                        +20.88 (5.29%)
+                      </span>
+                    </div>
+                  </div>
+                  <!-- block end -->
+                  <!-- block start -->
+                  <div class="most-active-inside leading-4">
+                    <div class="pl-2 w-[20ch]">
+                      <a href="" class="link-dark-grey">Renuka Sugar Ltd.</a>
+                    </div>
+                    <div class="pr-2 text-right">
+                      <span class="text-sm font-semibold text-cust-dark-grey">
+                        567.38
+                      </span>
+                      <br />
+                      <span class="text-sm text-red-600"> +20.88 (5.29%) </span>
+                    </div>
+                  </div>
+                  <!-- block end -->
+                </div>
+              </div>
+              <!-- Fifth Block ends -->
+            </aside>
+          </div>
+          <!-- Side panel ends  -->
+        </div>
+      </section>
+
+      <!-- Section 2 Start -->
+
+      <article>
+        <div
+          class="relative block mx-auto md:w-11/12 2xl:w-11/12 w-full p-2 md:p-0"
+        >
+          <div class="block p-3 bg-white shadow-sm rounded-md">
+            <h2 class="green-title-3xl">
+              Top Headlines Today: Stock Market News
+            </h2>
+
+            <div
+              class="block sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-2 md:px-4 my-2"
+            >
+              <!-- Block Start -->
+              <a href="#" class="">
+                <div class="box-news hover:bg-cust-lightest-grey">
+                  <div class="box-news__source">Mott Capital Investment</div>
+                  <div class="box-news__title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure sapiente at quod doloribus laboriosam itaque .
+                  </div>
+                  <div class="box-news__date">14 hours ago</div>
+                </div>
+              </a>
+              <!-- Block ends -->
+              <!-- Block Start -->
+              <a href="#" class="">
+                <div class="box-news hover:bg-cust-lightest-grey">
+                  <div class="box-news__source">Mott Capital Investment</div>
+                  <div class="box-news__title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure sapiente at quod doloribus laboriosam itaque .
+                  </div>
+                  <div class="box-news__date">14 hours ago</div>
+                </div>
+              </a>
+              <!-- Block ends -->
+              <!-- Block Start -->
+              <a href="#" class="">
+                <div class="box-news hover:bg-cust-lightest-grey">
+                  <div class="box-news__source">Mott Capital Investment</div>
+                  <div class="box-news__title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure sapiente at quod doloribus laboriosam itaque .
+                  </div>
+                  <div class="box-news__date">14 hours ago</div>
+                </div>
+              </a>
+              <!-- Block ends -->
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Section 2 Ends -->
+
+      <!-- Section 2A Start -->
+
+      <article>
+        <div
+          class="relative block mx-auto md:w-11/12 2xl:w-11/12 w-full p-2 md:p-0"
+        >
+          <div class="block p-3 bg-white shadow-sm rounded-md">
+            <h2 class="green-title-3xl">Stock Trends Scroller</h2>
+
+            <div class="table-responsive">
+              <table class="table-space-none">
+                <tr>
+                  <!-- Block Start -->
+                  <td class="pr-2">
+                    <a href="#" class="mr-1">
+                      <div class="trend-ticker-box">
                         <div class="">
-                            <div class="trend-ticker-box__symbol  bg-green-700  ">ASHOKLEY</div>
-                            <div class="trend-ticker-box__name ">India Bulls Housing Finance Ltd.</div>
+                          <div class="trend-ticker-box__symbol bg-green-700">
+                            ASHOKLEY
+                          </div>
+                          <div class="trend-ticker-box__name">
+                            India Bulls Housing Finance Ltd.
+                          </div>
                         </div>
                         <div class="mt-4 flex justify-between">
-                            <div class="trend-ticker-box__price ">$ 161.5</div>
-                            <div class="">
-                                <span class="trend-ticker-box__change text-green-800">^0.360%</span>
-                            </div>                                            
+                          <div class="trend-ticker-box__price">$ 161.5</div>
+                          <div class="">
+                            <span
+                              class="trend-ticker-box__change text-green-800"
+                              >^0.360%</span
+                            >
+                          </div>
                         </div>
-                        <div class=" mt-2">
-                            <span class="trend-ticker-box__trend bg-green-100">^Strong Uptrend</span>
+                        <div class="mt-2">
+                          <span class="trend-ticker-box__trend bg-green-100"
+                            >^Strong Uptrend</span
+                          >
                         </div>
-                    </div>
-                </a>
-        </td>
-<!-- Block ends -->
-<!-- Block Start -->
-<td class="pr-2">
-    <a href="#" class="mr-1">
-        <div class="  trend-ticker-box ">
-            <div class="">
-                <div class="trend-ticker-box__symbol  bg-green-700  ">ASHOKLEY</div>
-                <div class="trend-ticker-box__name ">India Bulls Housing Finance Ltd.</div>
-            </div>
-            <div class="mt-4 flex justify-between">
-                <div class="trend-ticker-box__price ">$ 161.5</div>
-                <div class="">
-                    <span class="trend-ticker-box__change text-green-800">^0.360%</span>
-                </div>                                            
-            </div>
-            <div class=" mt-2">
-                <span class="trend-ticker-box__trend bg-green-100">^Strong Uptrend</span>
-            </div>
-        </div>
-    </a>
-</td>
-<!-- Block ends -->
-
-<!-- Block Start -->
-<td class="pr-2">
-    <a href="#" class="mr-1">
-        <div class="  trend-ticker-box ">
-            <div class="">
-                <div class="trend-ticker-box__symbol  bg-green-700  ">ASHOKLEY</div>
-                <div class="trend-ticker-box__name ">India Bulls Housing Finance Ltd.</div>
-            </div>
-            <div class="mt-4 flex justify-between">
-                <div class="trend-ticker-box__price ">$ 161.5</div>
-                <div class="">
-                    <span class="trend-ticker-box__change text-green-800">^0.360%</span>
-                </div>                                            
-            </div>
-            <div class=" mt-2">
-                <span class="trend-ticker-box__trend bg-green-100">^Strong Uptrend</span>
-            </div>
-        </div>
-    </a>
-</td>
-<!-- Block ends -->
-<!-- Block Start -->
-<td class="pr-2">
-    <a href="#" class="mr-1">
-        <div class="  trend-ticker-box ">
-            <div class="">
-                <div class="trend-ticker-box__symbol  bg-green-700  ">ASHOKLEY</div>
-                <div class="trend-ticker-box__name ">India Bulls Housing Finance Ltd.</div>
-            </div>
-            <div class="mt-4 flex justify-between">
-                <div class="trend-ticker-box__price ">$ 161.5</div>
-                <div class="">
-                    <span class="trend-ticker-box__change text-green-800">^0.360%</span>
-                </div>                                            
-            </div>
-            <div class=" mt-2">
-                <span class="trend-ticker-box__trend bg-green-100">^Strong Uptrend</span>
-            </div>
-        </div>
-    </a>
-</td>
-<!-- Block ends -->
-<!-- Block Start -->
-<td class="pr-2">
-    <a href="#" class="mr-1">
-        <div class="  trend-ticker-box ">
-            <div class="">
-                <div class="trend-ticker-box__symbol  bg-green-700  ">ASHOKLEY</div>
-                <div class="trend-ticker-box__name ">India Bulls Housing Finance Ltd.</div>
-            </div>
-            <div class="mt-4 flex justify-between">
-                <div class="trend-ticker-box__price ">$ 161.5</div>
-                <div class="">
-                    <span class="trend-ticker-box__change text-green-800">^0.360%</span>
-                </div>                                            
-            </div>
-            <div class=" mt-2">
-                <span class="trend-ticker-box__trend bg-green-100">^Strong Uptrend</span>
-            </div>
-        </div>
-    </a>
-</td>
-<!-- Block ends -->
-           
-
-
-       </tr>
-       </table>
-       </div>
-       <!-- Table responsive ends  -->            
-
-
-
-    </div>
-
-    </div>
-</article>    
-
-
-
-<article>
-    <div class="container-rounded-white">
-        
-     
-        <h2 class="green-title-3xl  ">
-            Top Headlines Today: Stock Market News
-        </h2>
-     
-    <div class="block sm:grid sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-2 px-2 md:px-4 my-2  ">
-        
-        <!-- divblock start -->
-        <div class="relative w-full     leading-relaxed   mb-4 mr-3        ">
-            <a href="#" class="group  block   rounded-md px-2  py-3 
-            border-b-2 sm:border-b-0 border-dotted border-cust-lighter-grey border-r-none sm:border-r-2 border-dotted border-cust-lighter-grey 
-            hover:bg-cust-lightest-grey hover:shadow-md hover:border-transparent
-            ">
-            <div class="flex md:block align-center">
-            <div class="py-1 md:py-3">
-                <img src="images/BANKNIFTY1!_2022-08-15_00-42-06.png" alt="" class="h-[3rem] md:h-[4rem] aspect-video rounded-md ">
-            </div>                
-            <h1 class="text-xl font-bold ml-2 md:ml-0  text-cust-darker-grey " >Dow Cracks 500 points Nasdaq slips as well</h1>
-            </div>
-            <p class=" text-sm  text-cust-dark-grey">                
-                Lorem ipsum dolor sit Lorem ipsum dolor sit amet. Watch for breakout and close.                  
-            </p>
-            
-        </a>
-            </div>
-        <!-- divblock ends -->
-         
-         
-          
-         
-    </div>   
-        
-
-    </div>    
-</article>      
-
-
-<article>
-    <div class="container-rounded-white">
-        
-     
-        <h2 class="green-title-3xl   ">
-            Must Reads Important Articles
-        </h2>
-     
-    <div class="block sm:grid sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-2 px-2 md:px-4 my-2  ">
-        
-        <!-- divblock start -->
-        <div class="relative w-full     leading-relaxed   mb-4 mr-3         ">
-            <a href="#" class="group block  rounded-md px-2  py-3
-            border-b-2 sm:border-b-0
-            border-dotted border-cust-lighter-grey
-            border-r-none sm:border-r-2 border-dotted border-cust-lighter-grey
-            
-            hover:bg-cust-lightest-grey
-              hover:shadow-md hover:border-transparent
-            ">
-            <div class="py-3">
-                <img src="images/quino-al-XAlKHW9ierw-unsplash.jpg" alt="" class="w-full aspect-video rounded-md ">
-            </div>
-                <span class="  p-0.5 px-1 bg-cust-lighter-grey rounded-md text-sm  group-hover:bg-green-300">ESMIN!</span>
-                <h1 class="text-xl font-bold  text-cust-darker-grey" >ESMINI Medium Term Symmetrical Traiangle</h1>
-                <h2 class="text-xl  text-cust-dark-grey" >Technical Analysis powered</h2>
-                <p class=" text-sm  text-cust-dark-grey">
-                
-                    Lorem ipsum dolor sit Lorem ipsum dolor sit amet. Watch for breakout and close.  <br>
-                    <span class="  p-0.5 px-1  rounded-md text-sm  group-hover:text-cust-sec-clr group-hover:bg-white group-hover:font-semi-bold">More>></span>
-            </p>
-        </a>
-            </div>
-        <!-- divblock ends -->
-         
-         
-          
-         
-    </div>   
-        
-
-    </div>    
-</article>            
-
-
-
-
-<article>
-    <div class="container-rounded-white">
-        
-     
-    <div class="block  sm:grid sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-2       ">
-        
-        <!-- divblock start -->
-        <div class="news-snippet ">            
-                <a href="#"  class="news-snippet__link" >
-                    Dow Cracks 500 points Nasdaq slips as well</a>                            
-        </div>
-        <!-- divblock ends -->
-        <!-- divblock start -->
-        <div class="news-snippet ">            
-            <a href="#"  class="news-snippet__link" >
-                Dow Cracks 500 points Nasdaq slips as well</a>                            
-        </div>
-        <!-- divblock ends -->
-        <!-- divblock start -->
-        <div class="news-snippet ">            
-            <a href="#"  class="news-snippet__link" >
-                Dow Cracks 500 points Nasdaq slips as well</a>                            
-        </div>
-        <!-- divblock ends -->
-        <!-- divblock start -->
-        <div class="news-snippet ">            
-            <a href="#"  class="news-snippet__link" >
-                Dow Cracks 500 points Nasdaq slips as well</a>                            
-        </div>
-        <!-- divblock ends -->
-        <!-- divblock start -->
-        <div class="news-snippet ">            
-            <a href="#"  class="news-snippet__link" >
-                Dow Cracks 500 points Nasdaq slips as well</a>                            
-        </div>
-        <!-- divblock ends -->
-        <!-- divblock start -->
-        <div class="news-snippet ">            
-            <a href="#"  class="news-snippet__link" >
-                Dow Cracks 500 points Nasdaq slips as well</a>                            
-        </div>
-        <!-- divblock ends -->
-         
-         
-    </div>   
-        
-
-    </div>    
-</article>     
-
-<article>
-    <div class="container-rounded-white">
-        
-     
-    <div class="block  sm:grid sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-2       ">
-        
-        <!-- divblock start -->
-        <div class="mr-3  md:border-r border-dotted border-cust-dark-grey w-full  ">
-            <a href="#" class="group flex justify-between  p-2 hover:bg-cust-lightest-grey ">
-                <h2 class="text-cust-darker-grey font-bold group-hover:underline group-hover:decoration-cust-sec-clr  leading-5 " >
-                    Dow Cracks 500 points Nasdaq slips as well</h2>                
-            
-            <img src="images/ES1!_2022-09-12_21-34-23.png" alt="" class=" aspect-square w-[60px] h-[60px] m-2 rounded-md">
-        </a>
-        </div>
-        <!-- divblock ends -->
-         
-        
-         
-         
-    </div>   
-        
-
-    </div>    
-</article> 
-
-
-
-        </div>      
-        <!-- Side panel start  -->
-        <div class="side-panel">
-            <aside>
-                <!-- First Block -->
-                <div class="block trending-stocks-today    px-0  md:px-2  py-4 ">
-                    <div class="side-panel__green-title">
-                        Trending Stocks Today
-                    </div>
-                         
-                    <a href="" class="side-panel__links" >
-                    <span class="side-panel__symbol">TSLA</span> Tesla Inc 
+                      </div>
                     </a>
-                    <a href="" class="side-panel__links" >
-                        <span class="side-panel__symbol">AAPL</span> Alphabet Inc 
-                    </a>
-                    <a href="" class="side-panel__links" >
-                        <span class="side-panel__symbol">MSFT</span> Microsoft Inc 
-                    </a>
-
-                     
-
-                
-                   
-                </div>
-                <!-- First ends -->
-                <!-- Second Block Start -->
-                <div class="block top-picks    px-0  md:px-2  py-4  ">
-                    <div class="side-panel__normal-title">
-                       Top Picks 
-                    </div>
-                         
-                    <a href="" class="side-panel__links" >
-                        <span class="side-panel__symbol">TMA</span> Meta Inc 
-                        </a>
-                        <a href="" class="side-panel__links" >
-                            <span class="side-panel__symbol">AAPL</span> Alphabet Inc 
-                        </a>
-                        <a href="" class="side-panel__links" >
-                            <span class="side-panel__symbol">MSFT</span> Microsoft Inc 
-                        </a>
-                        <a href="" class="side-panel__links" >
-                        <span class="side-panel__symbol">TMA</span> Meta Inc 
-                        </a>
-                        <a href="" class="side-panel__links" >
-                            <span class="side-panel__symbol">AAPL</span> Facebook Inc 
-                        </a>
-                        <a href="" class="side-panel__links" >
-                            <span class="side-panel__symbol">MSFT</span> Alibaba Inc 
-                        </a>
-    
-
-                   
-                </div>
-                <!-- Second Block ends -->
-
-                <!-- Third Block -->
-                <div class="block top-picks     px-0  md:px-2  py-4 ">
-                    
-                    <div class="border p-1 border rounded-md divide-y">
-                        
-                        <div class="side-panel__green-title" >
-                            Webinars
-                         </div>
-
-                         <a href="#" class="side-panel-avatar-links">
-                            <img src="images/FIRePxDXIAQo8hj.jpg" alt="" class="avatar-img-10" >
-                            &bull; Learn How to Trade!
-                         </a>
-                         <a href="#" class="side-panel-avatar-links">
-                            <img src="images/duck.webp" alt="" class="avatar-img-10" >
-                            &bull; Learn How to Trade!
-                         </a>
-                         <a href="#" class="side-panel-avatar-links">
-                            &bull; New Indicator 
-                         </a>
-                         <a href="#" class="side-panel-avatar-links">
-                            &bull; Find out VIX of any stocks
-                         </a>
-
-
-                    </div>     
-                     
- 
-                </div>
-                <!-- Third Block ends -->
-                 <!-- Forth Block -->
-                 <div class="block top-picks     px-0  md:px-2  py-4 ">
-                    
-                    <div class="border p-1 border rounded-md">
-                        
-                        <div class="side-panel__green-title">
-                            Market Movers
-                         </div>
-                         <table class="table-auto rightpanel-table border-collapse border-spacing-0 text-sm border w-full" cellpadding="5">
-                            <thead>
-                              <tr class="border-b border-cust-lighter-grey  ">
-                                <th class="text-left  " >Name</th>
-                                <th class="text-left" >LTP</th>
-                                <th class="text-left" >Chg%</th>
-                                <th class="text-left" >Trend</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr class=" " >
-                                <td>
-                                    <a href="" class="table-link-bold ">
-                                        NIFTY
-                                    </a>
-                                </td>
-                                <td class="text-right" >
-                                    <a href="" class="table-link  ">
-                                        18000
-                                    </a>
-                                </td>
-                                <td class="text-center"  >
-                                    <a href="" class="table-link-green ">
-                                        1%
-                                    </a>
-                                </td>
-                                <td class=" " >
-                                    <a href="" class="table-link-green ">
-                                        uptrend
-                                    </a>
-                                </td>
-                              </tr>
-                              <tr class=" " >
-                                <td>
-                                    <a href="" class="table-link-bold">
-                                        BankNifty
-                                    </a>
-                                </td>
-                                <td class="text-right" >
-                                    <a href="" class="table-link">
-                                        18000
-                                    </a>
-                                </td>
-                                <td class=" text-center"  >
-                                    <a href="" class="table-link-red">
-                                        1%
-                                    </a>
-                                </td>
-                                <td class=" " >
-                                    <a href="" class="table-link-red ">
-                                        Downtrend
-                                    </a>
-                                </td>
-                              </tr>
-                              <tr class=" " >
-                                <td>
-                                    <a href="" class="py-2 hover:underline   font-semibold">
-                                        NIFTY
-                                    </a>
-                                </td>
-                                <td class="text-right" >
-                                    <a href="" class="py-2 hover:underline ">
-                                        18000
-                                    </a>
-                                </td>
-                                <td class=" text-center"  >
-                                    <a href="" class="py-2 text-green-700 hover:underline ">
-                                        1%
-                                    </a>
-                                </td>
-                                <td class="text-green-700" >
-                                    <a href="" class="py-2 hover:underline ">
-                                        uptrend
-                                    </a>
-                                </td>
-                              </tr>
-                              <tr class=" " >
-                                <td>
-                                    <a href="" class="py-2 hover:underline   font-semibold">
-                                        NIFTY
-                                    </a>
-                                </td>
-                                <td class="text-right" >
-                                    <a href="" class="py-2 hover:underline ">
-                                        18000
-                                    </a>
-                                </td>
-                                <td class=" text-center"  >
-                                    <a href="" class="py-2 text-green-700 hover:underline ">
-                                        1%
-                                    </a>
-                                </td>
-                                <td class="text-green-700" >
-                                    <a href="" class="py-2 hover:underline ">
-                                        uptrend
-                                    </a>
-                                </td>
-                              </tr>
-                               
-                              
-                            </tbody>
-                          </table>    
-
-                    </div>     
-                     
- 
-                </div>
-                <!-- Forth Block ends -->
-                 <!-- Fifth Block Start -->
-                 <div class="block top-picks     px-0  md:px-2  py-4 ">
-                    
-                    <div class="border p-1 border rounded-md divide-y">
-                        
-                        <div class="side-panel__green-title">
-                            Most Active Stocks Today
-                         </div>
-                         <!-- block start -->
-                         <div class="most-active-inside leading-4 ">
-                            <div class="pl-2 w-[20ch]  ">
-                                <a href="" class="link-dark-grey   ">Hindustan Unnilever Ltd.</a>
-                            </div> 
-                            <div class="pr-2 text-right  ">
-                                <span class="text-sm  font-semibold  text-cust-dark-grey">
-                                    567.38
-                                </span>
-                                <br>
-                                <span class="text-sm    text-green-600">
-                                    +20.88 (5.29%) 
-                                </span>
-                            </div>
-                        </div>
-                        <!-- block end -->
-                        <!-- block start -->
-                        <div class="most-active-inside leading-4 ">
-                            <div class="pl-2 w-[20ch]  ">
-                                <a href="" class="link-dark-grey   ">Renuka Sugar Ltd.</a>
-                            </div> 
-                            <div class="pr-2 text-right  ">
-                                <span class="text-sm  font-semibold  text-cust-dark-grey">
-                                    567.38
-                                </span>
-                                <br>
-                                <span class="text-sm     text-red-600">
-                                    +20.88 (5.29%) 
-                                </span>
-                            </div>
-                        </div>
-                        <!-- block end -->
-                         
-
-                    </div>     
-                     
- 
-                </div>
-                <!-- Fifth Block ends -->
-            </aside>
-        </div> 
-        <!-- Side panel ends  -->
-    </div>
-</section>
-
-
-
-<!-- Section 2 Start -->
-
-<article>
-    <div class="relative block mx-auto md:w-11/12  2xl:w-11/12 w-full  p-2 md:p-0   ">
-        <div class="  block p-3 bg-white shadow-sm rounded-md">        
-     
-            <h2 class="green-title-3xl   ">
-                Top Headlines Today: Stock Market News
-            </h2>
-         
-        <div class="block sm:grid sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-2 px-2 md:px-4 my-2  ">
-            <!-- Block Start -->
-            <a href="#" class="">
-            <div class="box-news hover:bg-cust-lightest-grey">
-                <div class="box-news__source">Mott Capital Investment</div>
-                <div class="box-news__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente at quod doloribus laboriosam itaque .</div>
-                <div class="box-news__date">14 hours ago</div>
-            </div>
-            </a>
-            <!-- Block ends -->
-            <!-- Block Start -->
-            <a href="#" class="">
-                <div class="box-news hover:bg-cust-lightest-grey">
-                    <div class="box-news__source">Mott Capital Investment</div>
-                    <div class="box-news__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente at quod doloribus laboriosam itaque .</div>
-                    <div class="box-news__date">14 hours ago</div>
-                </div>
-                </a>
-                <!-- Block ends -->
-            <!-- Block Start -->
-            <a href="#" class="">
-                <div class="box-news hover:bg-cust-lightest-grey">
-                    <div class="box-news__source">Mott Capital Investment</div>
-                    <div class="box-news__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente at quod doloribus laboriosam itaque .</div>
-                    <div class="box-news__date">14 hours ago</div>
-                </div>
-                </a>
-                <!-- Block ends -->    
-             
-           
-        </div>
-        </div>
-    </div>   
-</article>    
-
-<!-- Section 2 Ends -->
-
-
-<!-- Section 2A Start -->
-
-<article>
-    <div class="relative block mx-auto md:w-11/12  2xl:w-11/12 w-full  p-2 md:p-0   ">
-        <div class="  block p-3 bg-white shadow-sm rounded-md">        
-     
-            <h2 class="green-title-3xl   ">
-                Stock Trends Scroller
-            </h2>
-         
-        <div class="table-responsive">
-                 <table class="table-space-none"  >
-                    <tr>
-                       
-                <!-- Block Start -->
-                        <td class="pr-2">
-                                <a href="#" class="mr-1">
-                                    <div class="  trend-ticker-box ">
-                                        <div class="">
-                                            <div class="trend-ticker-box__symbol  bg-green-700  ">ASHOKLEY</div>
-                                            <div class="trend-ticker-box__name ">India Bulls Housing Finance Ltd.</div>
-                                        </div>
-                                        <div class="mt-4 flex justify-between">
-                                            <div class="trend-ticker-box__price ">$ 161.5</div>
-                                            <div class="">
-                                                <span class="trend-ticker-box__change text-green-800">^0.360%</span>
-                                            </div>                                            
-                                        </div>
-                                        <div class=" mt-2">
-                                            <span class="trend-ticker-box__trend bg-green-100">^Strong Uptrend</span>
-                                        </div>
-                                    </div>
-                                </a>
-                        </td>
-                <!-- Block ends -->
-                <!-- Block Start -->
-                <td class="pr-2">
+                  </td>
+                  <!-- Block ends -->
+                  <!-- Block Start -->
+                  <td class="pr-2">
                     <a href="#" class="mr-1">
-                        <div class="  trend-ticker-box ">
-                            <div class="">
-                                <div class="trend-ticker-box__symbol  bg-red-700  ">AAPL</div>
-                                <div class="trend-ticker-box__name ">Alphabet INC Common Stock Class A.</div>
-                            </div>
-                            <div class="mt-4 flex justify-between">
-                                <div class="trend-ticker-box__price ">$ 161.5</div>
-                                <div class="">
-                                    <span class="trend-ticker-box__change text-red-800">^0.360%</span>
-                                </div>                                            
-                            </div>
-                            <div class=" mt-2">
-                                <span class="trend-ticker-box__trend bg-red-100">^Bearish</span>
-                            </div>
+                      <div class="trend-ticker-box">
+                        <div class="">
+                          <div class="trend-ticker-box__symbol bg-red-700">
+                            AAPL
+                          </div>
+                          <div class="trend-ticker-box__name">
+                            Alphabet INC Common Stock Class A.
+                          </div>
                         </div>
+                        <div class="mt-4 flex justify-between">
+                          <div class="trend-ticker-box__price">$ 161.5</div>
+                          <div class="">
+                            <span class="trend-ticker-box__change text-red-800"
+                              >^0.360%</span
+                            >
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <span class="trend-ticker-box__trend bg-red-100"
+                            >^Bearish</span
+                          >
+                        </div>
+                      </div>
                     </a>
-            </td>
-    <!-- Block ends -->
-    <!-- Block Start -->
-    <td class="pr-2">
-        <a href="#" class="mr-1">
-            <div class="  trend-ticker-box ">
-                <div class="">
-                    <div class="trend-ticker-box__symbol  bg-green-700  ">ASHOKLEY</div>
-                    <div class="trend-ticker-box__name ">India Bulls Housing Finance Ltd.</div>
-                </div>
-                <div class="mt-4 flex justify-between">
-                    <div class="trend-ticker-box__price ">$ 161.5</div>
-                    <div class="">
-                        <span class="trend-ticker-box__change text-green-800">^0.360%</span>
-                    </div>                                            
-                </div>
-                <div class=" mt-2">
-                    <span class="trend-ticker-box__trend bg-green-100">^Strong Uptrend</span>
-                </div>
-            </div>
-        </a>
-</td>
-<!-- Block ends -->
-<!-- Block Start -->
-<td class="pr-2">
-<a href="#" class="mr-1">
-<div class="  trend-ticker-box ">
-    <div class="">
-        <div class="trend-ticker-box__symbol  bg-red-700    ">AAPL</div>
-        <div class="trend-ticker-box__name ">Alphabet INC Common Stock Class A.</div>
-    </div>
-    <div class="mt-4 flex justify-between">
-        <div class="trend-ticker-box__price ">$ 161.5</div>
-        <div class="">
-            <span class="trend-ticker-box__change text-red-800">^0.360%</span>
-        </div>                                            
-    </div>
-    <div class=" mt-2">
-        <span class="trend-ticker-box__trend bg-red-100">^Bearish</span>
-    </div>
-</div>
-</a>
-</td>
-<!-- Block ends -->
-<!-- Block Start -->
-<td class="pr-2">
-    <a href="#" class="mr-1">
-        <div class="  trend-ticker-box ">
-            <div class="">
-                <div class="trend-ticker-box__symbol  bg-green-700   ">ASHOKLEY</div>
-                <div class="trend-ticker-box__name ">India Bulls Housing Finance Ltd.</div>
-            </div>
-            <div class="mt-4 flex justify-between">
-                <div class="trend-ticker-box__price ">$ 161.5</div>
-                <div class="">
-                    <span class="trend-ticker-box__change text-green-800">^0.360%</span>
-                </div>                                            
-            </div>
-            <div class=" mt-2">
-                <span class="trend-ticker-box__trend bg-green-100">^Strong Uptrend</span>
-            </div>
-        </div>
-    </a>
-</td>
-<!-- Block ends -->
-<!-- Block Start -->
-<td class="pr-2">
-<a href="#" class="mr-1">
-<div class="  trend-ticker-box ">
-<div class="">
-    <div class="trend-ticker-box__symbol  bg-red-700  ">AAPL</div>
-    <div class="trend-ticker-box__name ">Alphabet INC Common Stock Class A.</div>
-</div>
-<div class="mt-4 flex justify-between">
-    <div class="trend-ticker-box__price ">$ 161.5</div>
-    <div class="">
-        <span class="trend-ticker-box__change text-red-800">^0.360%</span>
-    </div>                                            
-</div>
-<div class=" mt-2">
-    <span class="trend-ticker-box__trend bg-red-100">^Bearish</span>
-</div>
-</div>
-</a>
-</td>
-<!-- Block ends -->
-<!-- Block Start -->
-<td class="pr-2">
-    <a href="#" class="mr-1">
-        <div class="  trend-ticker-box ">
-            <div class="">
-                <div class="trend-ticker-box__symbol  bg-green-700  ">ASHOKLEY</div>
-                <div class="trend-ticker-box__name ">India Bulls Housing Finance Ltd.</div>
-            </div>
-            <div class="mt-4 flex justify-between">
-                <div class="trend-ticker-box__price ">$ 161.5</div>
-                <div class="">
-                    <span class="trend-ticker-box__change text-green-800">^0.360%</span>
-                </div>                                            
-            </div>
-            <div class=" mt-2">
-                <span class="trend-ticker-box__trend bg-green-100">^Strong Uptrend</span>
-            </div>
-        </div>
-    </a>
-</td>
-<!-- Block ends -->
-<!-- Block Start -->
-<td class="pr-2">
-<a href="#" class="mr-1">
-<div class="  trend-ticker-box ">
-<div class="">
-    <div class="trend-ticker-box__symbol  bg-red-700  ">AAPL</div>
-    <div class="trend-ticker-box__name ">Alphabet INC Common Stock Class A.</div>
-</div>
-<div class="mt-4 flex justify-between">
-    <div class="trend-ticker-box__price ">$ 161.5</div>
-    <div class="">
-        <span class="trend-ticker-box__change text-red-800">^0.360%</span>
-    </div>                                            
-</div>
-<div class=" mt-2">
-    <span class="trend-ticker-box__trend bg-red-100">^Bearish</span>
-</div>
-</div>
-</a>
-</td>
-<!-- Block ends -->
-                
-                 
-                  
-                    </tr>
-                 </table>    
-        </div>
-        </div>
-    </div>   
-</article>    
-
-<!-- Section 2A Ends -->
- 
-<!-- Section 3 Start -->
-
-<article>
-    
-        <div class="  block p-3 bg-white border-y border-dotted border-cust-dark-grey ">        
-            <div class="relative block mx-auto md:w-10/12  2xl:w-9/12 w-full  p-2 md:p-0   ">
-                <h1 class="highlight-title">  Always available for the most  deserving Traders</h1>
-                <h2 class="highlight-sub-title" >The right place to get Powerfull Result Oriented Strengthfull Analysis to Power Your Trades.</h2>   
-
-                <div class="block md:grid  md:grid-cols-2  gap-2 px-2 md:px-4 my-3  ">
-
-                    <div class="highlights">
-                        <!-- Block start -->
-                        <div class="highlight-block">                        
-                            <div class="highlight-block-avatar">
-                                <img src="images/FIRePxDXIAQo8hj.jpg" alt="" class="avatar-img-100  " >
-                            </div>
-                            <div class="">
-                             <h3 class="highlight-block-text">High-quality Trade Analysis</h3>   
-                            Download scroll-stopping images of the best quality to make your projects look professional.
-                            </div>                        
+                  </td>
+                  <!-- Block ends -->
+                  <!-- Block Start -->
+                  <td class="pr-2">
+                    <a href="#" class="mr-1">
+                      <div class="trend-ticker-box">
+                        <div class="">
+                          <div class="trend-ticker-box__symbol bg-green-700">
+                            ASHOKLEY
+                          </div>
+                          <div class="trend-ticker-box__name">
+                            India Bulls Housing Finance Ltd.
+                          </div>
                         </div>
-                        <!-- Block ends -->
-                        <!-- Block start -->
-                        <div class="highlight-block">                        
-                            <div class="highlight-block-avatar">
-                                <img src="images/FIRePxDXIAQo8hj.jpg" alt="" class="avatar-img-100  " >
-                            </div>
-                            <div class="">
-                             <h3 class="highlight-block-text">High-quality Trade Analysis</h3>   
-                            Download scroll-stopping images of the best quality to make your projects look professional.
-                            </div>                        
+                        <div class="mt-4 flex justify-between">
+                          <div class="trend-ticker-box__price">$ 161.5</div>
+                          <div class="">
+                            <span
+                              class="trend-ticker-box__change text-green-800"
+                              >^0.360%</span
+                            >
+                          </div>
                         </div>
-                        <!-- Block ends -->
-                        <!-- Block start -->
-                        <div class="highlight-block">                        
-                            <div class="highlight-block-avatar">
-                                <img src="images/FIRePxDXIAQo8hj.jpg" alt="" class="avatar-img-100  " >
-                            </div>
-                            <div class="">
-                             <h3 class="highlight-block-text">High-quality Trade Analysis</h3>   
-                            Download scroll-stopping images of the best quality to make your projects look professional.
-                            </div>                        
+                        <div class="mt-2">
+                          <span class="trend-ticker-box__trend bg-green-100"
+                            >^Strong Uptrend</span
+                          >
                         </div>
-                        <!-- Block ends -->
-                        <!-- Block start -->
-                        <div class="highlight-block">                        
-                            <div class="highlight-block-avatar">
-                                <img src="images/FIRePxDXIAQo8hj.jpg" alt="" class="avatar-img-100  " >
-                            </div>
-                            <div class="">
-                             <h3 class="highlight-block-text">High-quality Trade Analysis</h3>   
-                            Download scroll-stopping images of the best quality to make your projects look professional.
-                            </div>                        
+                      </div>
+                    </a>
+                  </td>
+                  <!-- Block ends -->
+                  <!-- Block Start -->
+                  <td class="pr-2">
+                    <a href="#" class="mr-1">
+                      <div class="trend-ticker-box">
+                        <div class="">
+                          <div class="trend-ticker-box__symbol bg-red-700">
+                            AAPL
+                          </div>
+                          <div class="trend-ticker-box__name">
+                            Alphabet INC Common Stock Class A.
+                          </div>
                         </div>
-                        <!-- Block ends -->
-                         
-                          
-
-                    </div>
-
-                    <div class="relative p-4 place-self-center">
-                        <img src="images/pexels-olya-kobruseva-5561914.jpg" alt="" class="  rounded-full w-11/12  " >
-                    </div>
-                     
-                </div>
-
+                        <div class="mt-4 flex justify-between">
+                          <div class="trend-ticker-box__price">$ 161.5</div>
+                          <div class="">
+                            <span class="trend-ticker-box__change text-red-800"
+                              >^0.360%</span
+                            >
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <span class="trend-ticker-box__trend bg-red-100"
+                            >^Bearish</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                  <!-- Block ends -->
+                  <!-- Block Start -->
+                  <td class="pr-2">
+                    <a href="#" class="mr-1">
+                      <div class="trend-ticker-box">
+                        <div class="">
+                          <div class="trend-ticker-box__symbol bg-green-700">
+                            ASHOKLEY
+                          </div>
+                          <div class="trend-ticker-box__name">
+                            India Bulls Housing Finance Ltd.
+                          </div>
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                          <div class="trend-ticker-box__price">$ 161.5</div>
+                          <div class="">
+                            <span
+                              class="trend-ticker-box__change text-green-800"
+                              >^0.360%</span
+                            >
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <span class="trend-ticker-box__trend bg-green-100"
+                            >^Strong Uptrend</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                  <!-- Block ends -->
+                  <!-- Block Start -->
+                  <td class="pr-2">
+                    <a href="#" class="mr-1">
+                      <div class="trend-ticker-box">
+                        <div class="">
+                          <div class="trend-ticker-box__symbol bg-red-700">
+                            AAPL
+                          </div>
+                          <div class="trend-ticker-box__name">
+                            Alphabet INC Common Stock Class A.
+                          </div>
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                          <div class="trend-ticker-box__price">$ 161.5</div>
+                          <div class="">
+                            <span class="trend-ticker-box__change text-red-800"
+                              >^0.360%</span
+                            >
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <span class="trend-ticker-box__trend bg-red-100"
+                            >^Bearish</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                  <!-- Block ends -->
+                  <!-- Block Start -->
+                  <td class="pr-2">
+                    <a href="#" class="mr-1">
+                      <div class="trend-ticker-box">
+                        <div class="">
+                          <div class="trend-ticker-box__symbol bg-green-700">
+                            ASHOKLEY
+                          </div>
+                          <div class="trend-ticker-box__name">
+                            India Bulls Housing Finance Ltd.
+                          </div>
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                          <div class="trend-ticker-box__price">$ 161.5</div>
+                          <div class="">
+                            <span
+                              class="trend-ticker-box__change text-green-800"
+                              >^0.360%</span
+                            >
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <span class="trend-ticker-box__trend bg-green-100"
+                            >^Strong Uptrend</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                  <!-- Block ends -->
+                  <!-- Block Start -->
+                  <td class="pr-2">
+                    <a href="#" class="mr-1">
+                      <div class="trend-ticker-box">
+                        <div class="">
+                          <div class="trend-ticker-box__symbol bg-red-700">
+                            AAPL
+                          </div>
+                          <div class="trend-ticker-box__name">
+                            Alphabet INC Common Stock Class A.
+                          </div>
+                        </div>
+                        <div class="mt-4 flex justify-between">
+                          <div class="trend-ticker-box__price">$ 161.5</div>
+                          <div class="">
+                            <span class="trend-ticker-box__change text-red-800"
+                              >^0.360%</span
+                            >
+                          </div>
+                        </div>
+                        <div class="mt-2">
+                          <span class="trend-ticker-box__trend bg-red-100"
+                            >^Bearish</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </td>
+                  <!-- Block ends -->
+                </tr>
+              </table>
             </div>
-        </div>   
-</article>    
+          </div>
+        </div>
+      </article>
 
-<!-- Section 3 Ends -->
+      <!-- Section 2A Ends -->
 
-<!-- Section 4 Start -->
+      <!-- Section 3 Start -->
 
-<article class="bg-white">
-    <div class="relative block mx-auto md:w-11/12  2xl:w-11/12 w-full  p-2 md:p-0   ">
-        <div class="  block p-3  ">             
-           
-            <div class="block md:grid  md:grid-cols-2  gap-2 px-2 md:px-4 my-3  ">
-                <div class="relative p-4  ">
-                   <h3 class="green-title-3xl"> Stay Updated, join the community</h3>
-                   <p class="my-5">
-                    Enhance your skills, get daily updated levels and market insights straight to your inbox.
-                   Get ideas charts patterns, support and resistance from contributing Analyst. 
-                   </p>
-                   
-                   <a href="#" class=" transition   button-link inline-block
-                   bg-cust-logo-green    text-white  
-                  hover:bg-cust-pri-clr   active:bg-cust-logo-blue
-                ">Subscribe</a>
-                   
+      <article>
+        <div
+          class="block p-3 bg-white border-y border-dotted border-cust-dark-grey"
+        >
+          <div
+            class="relative block mx-auto md:w-10/12 2xl:w-9/12 w-full p-2 md:p-0"
+          >
+            <h1 class="highlight-title">
+              Always available for the most deserving Traders
+            </h1>
+            <h2 class="highlight-sub-title">
+              The right place to get Powerfull Result Oriented Strengthfull
+              Analysis to Power Your Trades.
+            </h2>
 
-
+            <div class="block md:grid md:grid-cols-2 gap-2 px-2 md:px-4 my-3">
+              <div class="highlights">
+                <!-- Block start -->
+                <div class="highlight-block">
+                  <div class="highlight-block-avatar">
+                    <img
+                      src="images/FIRePxDXIAQo8hj.jpg"
+                      alt=""
+                      class="avatar-img-100"
+                    />
+                  </div>
+                  <div class="">
+                    <h3 class="highlight-block-text">
+                      High-quality Trade Analysis
+                    </h3>
+                    Download scroll-stopping images of the best quality to make
+                    your projects look professional.
+                  </div>
                 </div>
-                <div class="relative p-0 place-self-center hidden md:block ">
-                    <img src="images/community.webp" alt="" class="  rounded-full h-[290px]  " >
-                </div>             
+                <!-- Block ends -->
+                <!-- Block start -->
+                <div class="highlight-block">
+                  <div class="highlight-block-avatar">
+                    <img
+                      src="images/FIRePxDXIAQo8hj.jpg"
+                      alt=""
+                      class="avatar-img-100"
+                    />
+                  </div>
+                  <div class="">
+                    <h3 class="highlight-block-text">
+                      High-quality Trade Analysis
+                    </h3>
+                    Download scroll-stopping images of the best quality to make
+                    your projects look professional.
+                  </div>
+                </div>
+                <!-- Block ends -->
+                <!-- Block start -->
+                <div class="highlight-block">
+                  <div class="highlight-block-avatar">
+                    <img
+                      src="images/FIRePxDXIAQo8hj.jpg"
+                      alt=""
+                      class="avatar-img-100"
+                    />
+                  </div>
+                  <div class="">
+                    <h3 class="highlight-block-text">
+                      High-quality Trade Analysis
+                    </h3>
+                    Download scroll-stopping images of the best quality to make
+                    your projects look professional.
+                  </div>
+                </div>
+                <!-- Block ends -->
+                <!-- Block start -->
+                <div class="highlight-block">
+                  <div class="highlight-block-avatar">
+                    <img
+                      src="images/FIRePxDXIAQo8hj.jpg"
+                      alt=""
+                      class="avatar-img-100"
+                    />
+                  </div>
+                  <div class="">
+                    <h3 class="highlight-block-text">
+                      High-quality Trade Analysis
+                    </h3>
+                    Download scroll-stopping images of the best quality to make
+                    your projects look professional.
+                  </div>
+                </div>
+                <!-- Block ends -->
+              </div>
+
+              <div class="relative p-4 place-self-center">
+                <img
+                  src="images/marketreport.webp"
+                  alt=""
+                  class="rounded-full w-11/12"
+                />
+              </div>
             </div>
-
+          </div>
         </div>
+      </article>
 
-    </div>   
-</article>    
+      <!-- Section 3 Ends -->
 
-<!-- Section 4 Ends -->
+      <!-- Section 4 Start -->
 
+      <article class="bg-white">
+        <div
+          class="relative block mx-auto md:w-11/12 2xl:w-11/12 w-full p-2 md:p-0"
+        >
+          <div class="block p-3">
+            <div class="block md:grid md:grid-cols-2 gap-2 px-2 md:px-4 my-3">
+              <div class="relative p-4">
+                <h3 class="green-title-3xl">
+                  Stay Updated, join the community
+                </h3>
+                <p class="my-5">
+                  Enhance your skills, get daily updated levels and market
+                  insights straight to your inbox. Get ideas charts patterns,
+                  support and resistance from contributing Analyst.
+                </p>
 
-<!-- green strip -->
-<div class="relative border-t bg-white mb-2">
-    <div class="relative block mx-auto md:w-11/12  2xl:w-11/12 w-full  p-2 md:p-0   ">
-        <div class="  block p-3 py-5  text-3xl font-light text-center text-cust-dark-grey  "> 
-            Free Market Analysis Reports, Updated Daily  
+                <a
+                  href="#"
+                  class="transition button-link inline-block bg-cust-logo-green text-white hover:bg-cust-pri-clr active:bg-cust-logo-blue"
+                  >Subscribe</a
+                >
+              </div>
+              <div class="relative p-0 place-self-center hidden md:block">
+                <img
+                  src="images/comunitytech150.webp"
+                  alt=""
+                  class="h-[278px]"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-    </div>        
-</div>
-<!-- green strips ends -->
+      </article>
 
+      <!-- Section 4 Ends -->
 
+      <!-- green strip -->
+      <div class="relative border-t bg-white mb-2">
+        <div
+          class="relative block mx-auto md:w-11/12 2xl:w-11/12 w-full p-2 md:p-0"
+        >
+          <div
+            class="block p-3 py-5 text-3xl font-light text-center text-cust-dark-grey"
+          >
+            Free Market Analysis Reports, Updated Daily
+          </div>
+        </div>
+      </div>
+      <!-- green strips ends -->
 
-<!-- Footer Start -->
-<footer>
-<div class="relative bg-cust-lightest-grey  ">
-    <div class="bg-cust-sec-clr    p-0   text-sm text-white  h-3"> </div>
-    <div class="relative block mx-auto md:w-11/12  2xl:w-11/12 w-full  p-2 py-8     ">
-        <div class="  block md:flex  "> 
-            <div class="footer-logo text-center md:text-left p-2 border-b md:border-b-0  md:border-r border-dotted border-cust-dark-grey h-fit">
-                <a href="# " class="flex justify-center md:block  ">
-                    <img src="images/snp_full.svg" alt="Stocks & Profit Logo" class="max-h-[38px]  max-w-[226px] ">                    
+      <!-- Footer Start -->
+      <footer>
+        <div class="relative bg-cust-lightest-grey">
+          <div class="bg-cust-sec-clr p-0 text-sm text-white h-3"></div>
+          <div
+            class="relative block mx-auto md:w-11/12 2xl:w-11/12 w-full p-2 py-8"
+          >
+            <div class="block md:flex">
+              <div
+                class="footer-logo text-center md:text-left p-2 border-b md:border-b-0 md:border-r border-dotted border-cust-dark-grey h-fit"
+              >
+                <a href="# " class="flex justify-center md:block">
+                  <img
+                    src="images/snp_full.svg"
+                    alt="Stocks & Profit Logo"
+                    class="max-h-[38px] max-w-[226px]"
+                  />
                 </a>
-                <div class="my-2 text-xl md:text-lg font-light">www.StocksandProfit.com</div>
-                <div class="my-2 text-lg md:text-base">support@stocksandprofit.com</div>
-                <div class="text-xs">Copyright &copy; 2022, Stocks & Profit Digital.</div>
-                <div class="text-xs md:w-[40ch] block   ">All trademarks are registered trademarks of their respective owner.</div>                
-            </div>
-            <div class="footer-links-box  ">
-                <ul class="footer-links-ul">
-                    <li class="footer-links-li-title      ">
-                         Company
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Top Stocks Picks
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Stocks in Uptrend
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Bullinsh Stocks
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Intraday Stocks
-                        </a>
-                    </li>                   
-                </ul>
-                <ul class="footer-links-ul">
-                    <li class="footer-links-li-title      ">
-                         Day Trading
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Top Stocks Picks
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Stocks in Uptrend
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Bullinsh Stocks
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Intraday Stocks
-                        </a>
-                    </li>                   
-                </ul>
-                <ul class="footer-links-ul">
-                    <li class="footer-links-li-title      ">
-                         Disclaimers
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Top Stocks Picks
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Stocks in Uptrend
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Bullinsh Stocks
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a href="#" class="footer-links">
-                        Intraday Stocks
-                        </a>
-                    </li>                   
-                </ul>
-                 
-                 
-                 
-                
-                 
-                 
-                 
-                
-                 
-            </div>
-            <div class="footer-social-box">
-              
-                <div class="flex flex-wrap gap-2 justify-center md:justify-left ">
-                    <a href="#" class="social-box-icons
-                       " aria-label="follow on Youtube" >
-                    <img src="images/youtube.svg" alt="" class=" h-8 w-8  "> 
-                    </a>
-                    <a href="#" class="social-box-icons 
-                       " aria-label="follow on Facebook" >
-                    <img src="images/facebook.svg" alt="" class=" h-8 w-8  "> 
-                    </a>
-                    <a href="#" class="social-box-icons
-                       " aria-label="follow on twitter" >
-                    <img src="images/twitter.svg" alt="" class=" h-8 w-8  "> 
-                    </a>
-                    <a href="#" class="social-box-icons
-                       " aria-label="follow on instagram" >
-                    <img src="images/instagram.svg" alt="" class="  h-8 w-8"> 
-                    </a>
-                    <a href="#" class="social-box-icons
-                       " aria-label="follow on TradingView" >
-                    <img src="images/tradingviewsvg.svg" alt="" class=" h-7  w-[47px]"> 
-                    </a>
-                    
+                <div class="my-2 text-xl md:text-lg font-light">
+                  www.StocksandProfit.com
                 </div>
-                <a href="#" class="social-box-text-block
-                       " aria-label="Contact on Facebook" >
-                    <img src="images/whatsapp.svg" alt="" class="   ">  Contact us on Whatsapp
-                    </a>
+                <div class="my-2 text-lg md:text-base">
+                  support@stocksandprofit.com
+                </div>
+                <div class="text-xs">
+                  Copyright &copy; 2022, Stocks & Profit Digital.
+                </div>
+                <div class="text-xs md:w-[40ch] block">
+                  All trademarks are registered trademarks of their respective
+                  owner.
+                </div>
+              </div>
+              <div class="footer-links-box">
+                <ul class="footer-links-ul">
+                  <li class="footer-links-li-title">Company</li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Top Stocks Picks </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Stocks in Uptrend </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Bullinsh Stocks </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Intraday Stocks </a>
+                  </li>
+                </ul>
+                <ul class="footer-links-ul">
+                  <li class="footer-links-li-title">Day Trading</li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Top Stocks Picks </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Stocks in Uptrend </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Bullinsh Stocks </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Intraday Stocks </a>
+                  </li>
+                </ul>
+                <ul class="footer-links-ul">
+                  <li class="footer-links-li-title">Disclaimers</li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Top Stocks Picks </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Stocks in Uptrend </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Bullinsh Stocks </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#" class="footer-links"> Intraday Stocks </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-social-box">
+                <div
+                  class="flex flex-wrap gap-2 justify-center md:justify-left"
+                >
+                  <a
+                    href="#"
+                    class="social-box-icons"
+                    aria-label="follow on Youtube"
+                  >
+                    <img src="images/youtube.svg" alt="" class="h-8 w-8" />
+                  </a>
+                  <a
+                    href="#"
+                    class="social-box-icons"
+                    aria-label="follow on Facebook"
+                  >
+                    <img src="images/facebook.svg" alt="" class="h-8 w-8" />
+                  </a>
+                  <a
+                    href="#"
+                    class="social-box-icons"
+                    aria-label="follow on twitter"
+                  >
+                    <img src="images/twitter.svg" alt="" class="h-8 w-8" />
+                  </a>
+                  <a
+                    href="#"
+                    class="social-box-icons"
+                    aria-label="follow on instagram"
+                  >
+                    <img src="images/instagram.svg" alt="" class="h-8 w-8" />
+                  </a>
+                  <a
+                    href="#"
+                    class="social-box-icons"
+                    aria-label="follow on TradingView"
+                  >
+                    <img
+                      src="images/tradingviewsvg.svg"
+                      alt=""
+                      class="h-7 w-[47px]"
+                    />
+                  </a>
+                </div>
+                <a
+                  href="#"
+                  class="social-box-text-block"
+                  aria-label="Contact on Facebook"
+                >
+                  <img src="images/whatsapp.svg" alt="" class="   " /> Contact
+                  us on Whatsapp
+                </a>
 
-                    <a href="#" class="social-box-text-block
-                       " aria-label="Join us on Telegram" >
-                    <img src="images/telegram.svg" alt="" class="   ">  Join us on Telegram for Daily Stocks Calls <br>and Updates on stocks Trading
-                    </a>
-                
+                <a
+                  href="#"
+                  class="social-box-text-block"
+                  aria-label="Join us on Telegram"
+                >
+                  <img src="images/telegram.svg" alt="" class="   " /> Join us
+                  on Telegram for Daily Stocks Calls <br />and Updates on stocks
+                  Trading
+                </a>
+              </div>
             </div>
-            
-            
+          </div>
         </div>
-    </div>        
-</div>
 
-<div class="footer-grey-strip ">
-    <div class="relative  ">
-        Copyright &copy; StocksandProfit.com
+        <div class="footer-grey-strip">
+          <div class="relative text-xs">
+            Copyright &copy; StocksandProfit.com
+          </div>
+          <div class="relative">
+            <a href="#" class="p-2 text-xs">
+              Browse www.StocksandProfit.com for Day trading Ideas & Stock
+              Market Analysis and Intraday Tips
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer Ends -->
+
+      <!-- below is main body end div -->
     </div>
-    <div class="relative">
-        <a href="#" class="p-2 text-xs">
-            Browse www.StocksandProfit.com for Day trading Ideas & Stock Market Analysis and Intraday Tips
-        </a>
+    <!-- ################## ############## -->
+
+    <!-- Modal -->
+    <div
+      class="hidden modal fixed w-screen h-screen bg-black left-0 top-[70px] bottom-0 right-0 z-20 opacity-70"
+    >
+      <div class="relative p-5 bg-cust-light-grey block flex">
+        <div class="bg-white rounded-full inline-block mx-auto">
+          <h1>This is div modal</h1>
+        </div>
+      </div>
     </div>
-
-</div>
-
-</footer>
-<!-- Footer Ends -->
-
-
-
-
-
-
-
-
-
-<!-- below is main body end div -->
-</div>
-<!-- ################## ############## -->
-
-
-<!-- Modal --> 
-<div class="hidden modal fixed w-screen h-screen bg-black left-0 top-[70px] bottom-0 right-0 z-20 opacity-70    ">
-    <div class="relative p-5  bg-cust-light-grey block flex">
-        <div class="bg-white rounded-full inline-block mx-auto "><h1>This is div modal</h1></div>
-
-    </div>
-</div>
-<!-- Modal ends --> 
- 
-     
-    
-</body>
-<script src="entryv1.0.js" defer ></script>
-
-
-    
-    
+    <!-- Modal ends -->
+  </body>
+  <script src="entryv1.0.js" defer></script>
 </html>
