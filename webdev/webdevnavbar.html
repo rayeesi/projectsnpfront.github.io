@@ -49,24 +49,28 @@
             >
               <!-- Nav Main Menu start -->
               <ul
-                class="navbar-nav md:justify-center p-3 flex flex-col md:flex-row mb-8 md:mb-0"
+                class="navbar-nav md:justify-center p-3 flex flex-col md:flex-row mb-32 md:mb-0"
               >
                 <li class="nav-item bg-white p-2">
                   <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
 
-                <li class="nav-item bg-yellow-500 dropdown relative">
+                <li
+                  class="nav-item bg-yellow-500 dropdown relative"
+                  data-dropdown
+                >
                   <a
                     class="nav-link dropdown-toggle inline-block bg-black w-full h-full text-white p-2 m-0"
                     href="javascript:void(0)"
                     role="button"
-                    data-bs-toggle="dropdown"
+                    data-dropdown-toggle
                     aria-expanded="false"
                   >
                     Dropdown
                   </a>
                   <div
                     class="dropdown-menu hidden md:absolute top-[95%] left-0 z-10 mt-2 w-full md:w-48 divide-y origin-top-left rounded-md bg-white py-2 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    data-arrow-placement="bottom-start"
                   >
                     <ul class=" ">
                       <li class="p-3 hover:bg-blue-300">
@@ -113,49 +117,7 @@
                   >
                 </li>
 
-                <li class="nav-item bg-yellow-500 dropdown relative">
-                  <a
-                    class="nav-link dropdown-toggle inline-block bg-black w-full h-full text-white p-2 m-0"
-                    href="javascript:void(0)"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <div
-                    class="dropdown-menu hidden md:absolute top-[95%] left-0 z-10 mt-0 py-0 w-full md:w-48 divide-y origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                    data-popper-placement="bottom-left"
-                  >
-                    <ul class="  ">
-                      <li class="p-3 hover:bg-blue-300">
-                        <a class="dropdown-item font-bold" href="#">Action</a>
-                      </li>
-                      <li class="p-3 hover:bg-blue-300">
-                        <a class="dropdown-item font-bold" href="#">Action</a>
-                      </li>
-                      <li class="p-3 hover:bg-blue-300">
-                        <a class="dropdown-item font-bold" href="#">Action</a>
-                      </li>
-                      <li class="p-3 hover:bg-blue-300">
-                        <a class="dropdown-item font-bold" href="#"
-                          >Another action</a
-                        >
-                      </li>
-                      <li class="p-3 hover:bg-blue-300">
-                        <a class="dropdown-item font-bold" href="#"
-                          >Another action</a
-                        >
-                      </li>
-                      <li class="p-3 hover:bg-blue-300">
-                        <a class="dropdown-item font-bold" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                    <div class="dropdown-arrow" data-popper-arrow></div>
-                  </div>
-                </li>
+                <li class="nav-item bg-yellow-500 dropdown relative">asas</li>
               </ul>
 
               <!-- Nav Main  Menu Ends -->

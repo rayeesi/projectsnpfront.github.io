@@ -567,12 +567,8 @@ video {
   margin-top: 70px;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .block {
@@ -738,11 +734,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -840,12 +831,13 @@ div::-webkit-scrollbar {
 }
 
 div::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 div::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 div::-webkit-scrollbar-thumb:hover {
@@ -910,19 +902,19 @@ html {
   transform: rotate(45deg);
 }
 
-.dropdown-menu[data-popper-placement^="top"] > .dropdown-arrow {
+.dropdown-menu[data-arrow-placement^="top"] > .dropdown-arrow {
   bottom: -4px;
 }
 
-.dropdown-menu[data-popper-placement^="bottom"] > .dropdown-arrow {
+.dropdown-menu[data-arrow-placement^="bottom"] > .dropdown-arrow {
   top: -4px;
 }
 
-.dropdown-menu[data-popper-placement^="left"] > .dropdown-arrow {
+.dropdown-menu[data-arrow-placement^="left"] > .dropdown-arrow {
   right: -4px;
 }
 
-.dropdown-menu[data-popper-placement^="right"] > .dropdown-arrow {
+.dropdown-menu[data-arrow-placement^="right"] > .dropdown-arrow {
   left: -4px;
 }
 

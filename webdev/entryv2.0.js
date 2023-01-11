@@ -58,19 +58,19 @@ document.addEventListener("click", (event) => {
 //  Dropdown Menu //
 // inspired by webdevsimplified tutorial
 document.addEventListener("click", (e) => {
-  const isDropdownButton = e.target.matches(".dropdown-toggle");
+  const isDropdownButton = e.target.matches("[data-dropdown-toggle]");
 
-  if (!isDropdownButton && e.target.closest(".dropdown") != null) return;
+  if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return;
   console.log(isDropdownButton);
 
   let currentDropdown;
   if (isDropdownButton) {
     console.log("isdrop");
-    currentDropdown = e.target.closest(".dropdown");
+    currentDropdown = e.target.closest("[data-dropdown]");
     currentDropdown.classList.toggle("active");
   }
 
-  document.querySelectorAll(".dropdown.active").forEach((dropDown) => {
+  document.querySelectorAll("[data-dropdown].active").forEach((dropDown) => {
     if (dropDown === currentDropdown) return;
     dropDown.classList.remove("active");
   });
