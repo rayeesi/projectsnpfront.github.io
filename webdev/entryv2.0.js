@@ -6,6 +6,7 @@
 // inspired by kewinpowells & webdevsimplified tutorial
 const primaryNav = document.querySelector(".primary-nav");
 const hamburgerToggler = document.querySelector(".hamburger-button");
+const primaryNavBackdrop = document.querySelector(".primary-nav-backdrop");
 
 // hamburgerToggler.addEventListener('click',() => {
 //     const visibility = primaryNav.getAttribute('data-visible');
@@ -33,15 +34,18 @@ document.addEventListener("click", (event) => {
       if (visibility === "false") {
         primaryNav.setAttribute("data-visible", "true");
         hamburgerToggler.setAttribute("aria-expanded", "true");
+        primaryNavBackdrop.setAttribute("data-backdrop-visible", "true");
       } else if (visibility === "true") {
         primaryNav.setAttribute("data-visible", "false");
         hamburgerToggler.setAttribute("aria-expanded", "false");
+        primaryNavBackdrop.setAttribute("data-backdrop-visible", "false");
       }
     } else {
       //console.log(visibility);
       if (visibility === "true") {
         primaryNav.setAttribute("data-visible", "false");
         hamburgerToggler.setAttribute("aria-expanded", "false");
+        primaryNavBackdrop.setAttribute("data-backdrop-visible", "false");
       }
     }
   }

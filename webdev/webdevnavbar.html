@@ -16,7 +16,7 @@
           >
             <!-- Logo Brand Start -->
             <div
-              class="p-2 text-4xl top-0 fixed shadow-lg md:shadow-none md:relative bg-blue-300 md:bg-transparent w-full md:w-auto h-24 md:h-auto flex justify-center item-center z-20"
+              class="p-2 text-4xl top-0 fixed shadow-lg md:shadow-none md:relative bg-blue-300 md:bg-transparent w-full md:w-auto h-[80px] md:h-auto flex justify-center item-center z-20"
             >
               <button
                 aria-label="Menu"
@@ -36,15 +36,20 @@
             <!-- Logo Brand Ends -->
 
             <!-- Nav1 Start -->
-
             <div
-              class="primary-nav transition-transform md:block p-2 mt-[70px] md:mt-auto md:grow border-2 border-red-500 w-11/12 w-full md:w-auto bg-teal-500"
+              class="bg-black fixed w-full h-full opacity-50 primary-nav-backdrop hidden"
+              data-backdrop-visible="false"
+            >
+              <!-- this is backdrop -->
+            </div>
+            <div
+              class="primary-nav transition-transform md:block p-2 mt-[70px] md:mt-auto md:grow w-11/12 w-full md:w-auto bg-teal-500 rounded-md"
               id="primary-navigation"
               data-visible="false"
             >
               <!-- Nav Main Menu start -->
               <ul
-                class="navbar-nav md:justify-center p-3 flex flex-col md:flex-row"
+                class="navbar-nav md:justify-center p-3 flex flex-col md:flex-row mb-8 md:mb-0"
               >
                 <li class="nav-item bg-white p-2">
                   <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -62,9 +67,8 @@
                   </a>
                   <div
                     class="dropdown-menu hidden md:absolute top-[95%] left-0 z-10 mt-2 w-full md:w-48 divide-y origin-top-left rounded-md bg-white py-2 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                    data-popper-placement="bottom-left"
                   >
-                    <ul class="  ">
+                    <ul class=" ">
                       <li class="p-3 hover:bg-blue-300">
                         <a class="dropdown-item font-bold" href="#">Action</a>
                       </li>
@@ -153,6 +157,7 @@
                   </div>
                 </li>
               </ul>
+
               <!-- Nav Main  Menu Ends -->
             </div>
 
